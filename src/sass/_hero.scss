@@ -1,1 +1,90 @@
 /* ----------- Hero Styles ----------- */
+.hero {
+  background: #ffb8ca;
+}
+
+.hero__container {
+  position: relative;
+  overflow: hidden;
+
+  @include _phone {
+    padding-top: 137px;
+    padding-bottom: 203px;
+  }
+}
+
+.hero__title_block {
+  position: relative;
+  z-index: 10;
+}
+
+.hero__title {
+  font-family: Titan One;
+  text-transform: uppercase;
+
+  color: getColor('title-secondary');
+  @include _phone {
+    @include font(26px, 30px, 400, 0.04em);
+  }
+}
+
+.hero__title-accent {
+  color: getColor('title-primary');
+  @include _phone {
+    @include font(48px, 46px);
+  }
+}
+
+.hero__anchor {
+  display: inline-block;
+  @include _phone {
+    margin-top: 19px;
+    padding: 7px;
+    @include font(8px, 10px);
+  }
+  border-radius: 20px;
+}
+
+.hero__anchor--products {
+  color: getColor('button-text-secondary');
+  background-color: getColor('accent');
+}
+.hero__anchor--about {
+  color: getColor('button-text');
+  background-color: getColor('bg-primary');
+
+  @include _phone {
+    margin-left: 8px;
+  }
+}
+
+.hero__ice_cream_img {
+  position: absolute;
+}
+
+.hero__ice_cream_block {
+  position: absolute;
+  width: 171px;
+
+  @include _phone {
+    @include _phone {
+      top: 92px;
+      left: 36.56%;
+      //right: 10%;
+    }
+  }
+}
+
+.hero__ice_cream_block::before {
+  content: '';
+  position: absolute;
+  top: -9px;
+  left: 81px;
+  transform: translate(-50%);
+
+  width: 346px;
+  height: 344px;
+  background: getColor('icon-bg');
+
+  border-radius: 50%;
+}
