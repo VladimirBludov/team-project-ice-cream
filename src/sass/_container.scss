@@ -3,6 +3,8 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+  box-sizing: border-box;
 
   @include _phone_gap {
     width: 480px;

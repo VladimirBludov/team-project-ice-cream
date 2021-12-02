@@ -25,6 +25,7 @@
   color: getColor('title-secondary');
   @include _phone {
     @include font(26px, 30px, 400, 0.04em);
+    font-size: 8vw;
   }
 }
 
@@ -32,6 +33,7 @@
   color: getColor('title-primary');
   @include _phone {
     @include font(48px, 46px);
+    font-size: 15vw;
   }
 }
 
@@ -41,6 +43,7 @@
     margin-top: 19px;
     padding: 7px;
     @include font(8px, 10px);
+    font-size: 2.5vw;
   }
   border-radius: 20px;
 }
@@ -60,6 +63,7 @@
 
 .hero__ice_cream_img {
   position: absolute;
+  animation: appearImg 2000ms;
 }
 
 .hero__ice_cream_block {
@@ -71,6 +75,7 @@
     left: 36.56%;
     //right: 10%;
   }
+  animation: resize 2000ms;
 }
 
 .hero__ice_cream_block::before {
