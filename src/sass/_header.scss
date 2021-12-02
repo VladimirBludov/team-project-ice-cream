@@ -1,1 +1,46 @@
-/* ----------- Header Styles ----------- */
+.header {
+    padding-top: 6px;
+    background-color: #FFB8CA;
+    }
+.burger-btn {
+    display: block;
+    margin-left: auto;
+    background-color: #FFB8CA;;
+    cursor: pointer;
+    border: none;
+    line-height: 0;
+    padding: 0;
+    fill: #D41443;
+    transition: color 250ms linear;
+    }
+.burger-icon {
+    width: 20px;
+    height: 12px;
+    }
+.mobile-menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #E17992;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 60px 21px;
+    }
+.header__conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    }
+.header__nav{
+    display: flex;
+    align-items: center;
+    margin-right: auto;  
+    }
