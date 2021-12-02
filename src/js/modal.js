@@ -10,6 +10,10 @@
 
     if (target.tagName != 'IMG') return;
 
+    console.dir(target.atributes['1'].value);
+
+    // const imageSrc = target
+
     const isMenuOpen = refs.openModalBtn.getAttribute('aria-expanded') === 'true' || false;
 
     refs.openModalBtn.setAttribute('aria-expanded', !isMenuOpen);
