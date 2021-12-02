@@ -15,8 +15,10 @@
     }  
   }
   &__description {
+    @include _phone {
     width: 234px;
     height: 135px;
+  }
     @include _tablet {
       width: 340px;
       height: 183px;
