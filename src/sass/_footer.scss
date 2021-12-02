@@ -5,18 +5,10 @@
   &__content {
     padding-left: 5px;
     padding-right: 5px;
-    @include _tablet {
-      display: flex;
-      justify-content: space-between;
-    }
   }
   &__description {
     width: 234px;
     height: 135px;
-    @include _tablet {
-      width: 340px;
-      height: 183px;
-    }
   }
   &__description1 {
     font-family: Titan One;
@@ -24,11 +16,6 @@
     line-height: 1.16;
     text-transform: uppercase;
     color: getColor(text-fourth);
-    @include _tablet {
-      font-size: 26px;
-      line-height: 1.16;
-      letter-spacing: 0.04em;
-    }
   }
 
   &__description2 {
@@ -39,11 +26,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: getColor(accent);
-    @include _tablet {
-      font-size: 48px;
-      line-height: 1.16;
-      letter-spacing: 0.06em;
-    }
   }
 }
 
@@ -51,9 +33,7 @@
   display: flex;
   justify-content: end;
   margin-top: 43px;
-  @include _tablet {
-    margin-top: 0px;
-  }
+
   &-item {
     width: 32px;
     height: 32px;
@@ -78,9 +58,7 @@
 
 .footer__contact {
   margin-top: 46px;
-  @include _tablet {
-    margin-top: 0px;
-  }
+
   &-description {
     font-family: DM Sans;
     font-weight: 700;
@@ -88,11 +66,6 @@
     line-height: 1.86;
     text-align: right;
     margin-top: 46px;
-    @include _tablet {
-      font-size: 14px;
-      line-height: 1.86;
-      text-align: right;
-    }
   }
   &-link {
     font-family: DM Sans;
@@ -112,9 +85,7 @@
   padding-bottom: 25px;
   width: 100%;
   border-top: 1px solid #e1e1e1;
-  @include _tablet {
-      display: flex;
-  }
+
   &-description {
     font-family: DM Sans;
     font-weight: 700;
@@ -122,8 +93,5 @@
     line-height: 1.86;
     text-align: center;
     color: getColor(text-third);
-    @include _tablet {
-        margin-left: 5px;
-    }
   }
 }
