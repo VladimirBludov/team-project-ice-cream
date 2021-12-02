@@ -7,35 +7,124 @@
 
 .products__label {
   @include font(18px, 21px);
+  text-align: center;
   font-family: Titan One;
   text-transform: uppercase;
   color: getColor('text-fourth');
 }
 .products__title {
+  margin-bottom: 144px;
   @include font(34px, 39px);
+  text-align: center;
   font-family: Titan One;
   text-transform: uppercase;
+
   color: getColor('title-primary');
 }
 .products__list {
 }
+.products__product-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+.products__product-card:not(:last-child) {
+  margin-bottom: 130px;
+}
 .product-card {
-  padding: 41px;
-  width: 280px;
-  background-color: #ffb8ca;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 41px 41px 41px;
+  max-width: 280px;
   border-radius: 24px;
+}
+.product-card::before {
+  content: '';
+  margin-top: -113px;
+  margin-bottom: 22px;
+  display: block;
+  width: 249px;
+  height: 252px;
+  background-size: contain;
+}
+
+.product-card:first-child {
+  background-color: #ffb8ca;
+  &::before {
+    background-image: url('../images/products/products-1.png');
+
+    @include _pixel_x2 {
+      background-image: url('../images/products/products-1@2x.png');
+    }
+
+    @include _pixel_x3 {
+      background-image: url('../images/products/products-1@3x.png');
+    }
+  }
+}
+.product-card:nth-child(2) {
+  background-color: #f0d1a5;
+  &::before {
+    background-image: url('../images/products/products-2.png');
+
+    @include _pixel_x2 {
+      background-image: url('../images/products/products-2@2x.png');
+    }
+
+    @include _pixel_x3 {
+      background-image: url('../images/products/products-2@3x.png');
+    }
+  }
+}
+.product-card:last-child {
+  background-color: #c2e297;
+  &::before {
+    background-image: url('../images/products/products-3.png');
+
+    @include _pixel_x2 {
+      background-image: url('../images/products/products-3@2x.png');
+    }
+
+    @include _pixel_x3 {
+      background-image: url('../images/products/products-3@3x.png');
+    }
+  }
 }
 .product-card__title {
   @include font(20px, 23px);
   font-family: Titan One;
   text-transform: uppercase;
-  text-align: center;
   color: getColor('text-primary');
 }
+.product-card__title::after {
+  content: '';
+  margin: 30px auto;
+  display: block;
+  width: 26px;
+  height: 6px;
+  background-image: url('../images/products/points.png');
+  background-size: contain;
+  @include _pixel_x2 {
+    background-image: url('../images/products/points@2x.png');
+  }
+
+  @include _pixel_x3 {
+    background-image: url('../images/products/points@3x.png');
+  }
+}
+
 .product-card__text {
+  margin-bottom: 30px;
   @include font(14px, 21px, 700);
   text-align: center;
   color: getColor('text-primary');
 }
 .product-card__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  background-image: url('../images/products/arrow-right.png');
+  background-size: contain;
 }
