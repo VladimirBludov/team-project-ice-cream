@@ -13,7 +13,7 @@
   }
 }
 
-.hero__title_block {
+.hero__title-block {
   position: relative;
   z-index: 10;
 }
@@ -67,11 +67,9 @@
   width: 171px;
 
   @include _phone {
-    @include _phone {
-      top: 92px;
-      left: 36.56%;
-      //right: 10%;
-    }
+    top: 92px;
+    left: 36.56%;
+    //right: 10%;
   }
 }
 
