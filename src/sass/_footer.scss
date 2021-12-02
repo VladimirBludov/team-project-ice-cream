@@ -6,21 +6,15 @@
   @include _tablet {
     padding-top: 79px;
   }
-
   @include _desktop {
     padding-top: 82px;
   }
-
   &__content {
     @include _phone {
       padding-left: 5px;
       padding-right: 5px;
     }
-
     @include _tablet_and_desktop {
-
-    @include _tablet {
-
       display: flex;
       justify-content: space-between;
       padding-left: 0px;
@@ -36,12 +30,10 @@
       width: 340px;
       height: 183px;
     }
-
     @include _desktop {
       width: 477px;
       height: 115px;
     }
-
   }
   &__description1 {
     font-family: Titan One;
@@ -55,13 +47,11 @@
       font-size: 26px;
       letter-spacing: 0.04em;
     }
-
     @include _desktop {
       font-size: 30px;
       line-height: 1.25;
       letter-spacing: 0.04em;
     }
-
   }
 
   &__description2 {
@@ -70,14 +60,11 @@
     text-transform: uppercase;
     color: getColor(accent);
     @include _phone {
-
       margin-top: 17px;
-
       font-size: 34px;
       letter-spacing: 0.04em;
     }
     @include _tablet {
-
       margin-top: 17px;
       font-size: 48px;
       letter-spacing: 0.06em;
@@ -88,11 +75,6 @@
       line-height: 1.25;
       letter-spacing: 0.06em;
     }
-
-      font-size: 48px;
-      letter-spacing: 0.06em;
-    }
-
   }
 }
 
@@ -102,11 +84,7 @@
   @include _phone {
     margin-top: 43px;
   }
-
   @include _tablet_and_desktop {
-
-  @include _tablet {
-
     margin-top: 0px;
   }
   &-item {
@@ -147,11 +125,7 @@
   @include _phone {
     margin-top: 46px;
   }
-
   @include _tablet_and_desktop {
-
-  @include _tablet {
-
     margin-top: 0px;
   }
   &-description {
@@ -166,12 +140,10 @@
     @include _tablet {
       font-size: 14px;
     }
-
     @include _desktop {
       font-size: 16px;
       letter-spacing: 0.02em;
     }
-
   }
   &-link {
     font-family: DM Sans;
@@ -209,13 +181,11 @@
     padding-bottom: 18px;
     margin-top: 91px;
   }
-
   @include _desktop {
     margin-top: 97px;
     padding-top: 9px;
     padding-bottom: 19px;
   }
-
   &-description {
     font-family: DM Sans;
     font-weight: 700;
@@ -223,12 +193,9 @@
     line-height: 1.86;
     text-align: center;
     color: getColor(text-third);
-
     @include _tablet_and_desktop {
-
-    @include _tablet {
-
       margin-left: 6px;
     }
   }
 }
+
