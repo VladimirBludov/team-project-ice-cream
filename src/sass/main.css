@@ -1,0 +1,189 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+}
+
+@media screen and (min-width: 320) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    width: 730px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1080px;
+  }
+}
+
+/* ----------- Header Styles ----------- */
+/* ----------- Hero Styles ----------- */
+/* ----------- Products Styles ----------- */
+/* ----------- About Styles ----------- */
+/* ----------- Advantages Styles ----------- */
+.advantages {
+  padding-top: 20px;
+  padding-bottom: 48px;
+  background-color: #fff5f6;
+}
+
+.advantages__item {
+  max-width: 230px;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 38px;
+}
+
+.advantages__item::before {
+  content: '';
+  display: block;
+  margin-bottom: 16px;
+  height: 50px;
+  background-size: cover;
+}
+
+.advantages__item:first-child::before {
+  width: 33px;
+  background-image: url("../images/advantages/advantage-1.png");
+}
+
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item:first-child::before {
+    background-image: url("../images/advantages/advantage-1@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .advantages__item:first-child::before {
+    background-image: url("../images/advantages/advantage-1@3x.png");
+  }
+}
+
+.advantages__item:nth-child(2)::before {
+  width: 50px;
+  background-image: url("../images/advantages/advantage-2.png");
+}
+
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item:nth-child(2)::before {
+    background-image: url("../images/advantages/advantage-2@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .advantages__item:nth-child(2)::before {
+    background-image: url("../images/advantages/advantage-2@3x.png");
+  }
+}
+
+.advantages__item:last-child::before {
+  width: 44px;
+  background-image: url("../images/advantages/advantage-3.png");
+}
+
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages__item:last-child::before {
+    background-image: url("../images/advantages/advantage-3@2x.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 3), (-webkit-min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
+  .advantages__item:last-child::before {
+    background-image: url("../images/advantages/advantage-3@3x.png");
+  }
+}
+
+.advantages__accent {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Titan One;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.advantages__text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.67;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+/* ----------- Gallery Styles ----------- */
+/* ----------- Customer reviews Styles ----------- */
+/* ----------- Contacts Styles ----------- */
+/* ----------- Footer Styles ----------- */
+/*# sourceMappingURL=main.css.map */
