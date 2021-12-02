@@ -12,10 +12,8 @@
   }
   &__description1 {
     font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.16;
     text-transform: uppercase;
     color: getColor(text-fourth);
   }
@@ -23,21 +21,19 @@
   &__description2 {
     margin-top: 17px;
     font-family: Titan One;
-    font-style: normal;
-    font-weight: normal;
     font-size: 34px;
-    line-height: 39px;
+    line-height: 1.16;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: getColor(accent);
   }
 }
 
-.footer-social {
+.footer__social {
   display: flex;
   justify-content: end;
   margin-top: 43px;
-  &__item {
+  &-item {
     width: 32px;
     height: 32px;
     display: flex;
@@ -45,10 +41,8 @@
     align-items: center;
     margin-left: 28.24px;
   }
-  &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &-link {
+    @include centeredFlex();
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -61,20 +55,18 @@
   }
 }
 
-.footer-contact {
+.footer__contact {
   margin-top: 46px;
-  &__description {
+  &-description {
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
     text-align: right;
     margin-top: 46px;
   }
-  &__link {
+  &-link {
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.86;
@@ -83,18 +75,15 @@
   }
 }
 
-.footer-signature {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer__signature {
+  @include centeredFlex();
   margin-top: 43px;
   width: 100%;
   border-top: 1px solid #e1e1e1;
-  &__description {
+  &-description {
     padding-top: 22px;
     padding-bottom: 25px;
     font-family: DM Sans;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
