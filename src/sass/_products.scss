@@ -1,1 +1,41 @@
 /* ----------- Products Styles ----------- */
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  background-color: getColor('bg-primary');
+}
+
+.products__label {
+  @include font(18px, 21px);
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: getColor('text-fourth');
+}
+.products__title {
+  @include font(34px, 39px);
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: getColor('title-primary');
+}
+.products__list {
+}
+.product-card {
+  padding: 41px;
+  width: 280px;
+  background-color: #ffb8ca;
+  border-radius: 24px;
+}
+.product-card__title {
+  @include font(20px, 23px);
+  font-family: Titan One;
+  text-transform: uppercase;
+  text-align: center;
+  color: getColor('text-primary');
+}
+.product-card__text {
+  @include font(14px, 21px, 700);
+  text-align: center;
+  color: getColor('text-primary');
+}
+.product-card__button {
+}
