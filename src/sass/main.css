@@ -184,6 +184,46 @@ body {
 
 /* ----------- Gallery Styles ----------- */
 /* ----------- Customer reviews Styles ----------- */
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 85px;
+}
+
+.reviews__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quote {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fafafa;
+  max-width: 480px;
+  margin-top: 30px;
+  padding: 43px 50px 20px 50px;
+}
+
+.quote__text {
+  position: relative;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  z-index: 2;
+  padding: 0 16px 0 7px;
+  background-image: repeating-linear-gradient(to top, #e1e1e1, transparent 1px 31px);
+}
+
+.quote__icon {
+  position: absolute;
+  top: 28px;
+  left: 61px;
+  fill: #e1e1e1;
+  z-index: 1;
+}
+
 /* ----------- Contacts Styles ----------- */
 /* ----------- Footer Styles ----------- */
 /*# sourceMappingURL=main.css.map */
