@@ -1,6 +1,6 @@
 // /* ------------------------- Modal window ------------------------- */
 
-.modal {
+.gallery-modal {
   &--backdrop {
     position: fixed;
     top: 0;
@@ -26,7 +26,7 @@
   }
 }
 
-.modal__container {
+.gallery-modal__container {
   position: relative;
   top: 50%;
   left: 50%;
@@ -42,7 +42,7 @@
   transform: translate(-50%, -50%) scale(1, 1);
   transition: opacity 250ms $animation-cubic, transform 250ms $animation-cubic;
 
-  .modal--is-hidden & {
+  .gallery-modal--is-hidden & {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5, 0.5);
   }
@@ -56,14 +56,14 @@
   // }
 }
 
-.modal__img-container {
+.gallery-modal__img-container {
   margin: auto;
   min-width: 260px;
   max-width: 450px;
 }
 // /* ------------------------- Button close ------------------------- */
 
-.modal__close {
+.gallery-modal__close {
   @include centeredFlex();
 
   position: absolute;
@@ -85,6 +85,6 @@
   }
 }
 
-.modal__close-icon {
+.gallery-modal__close-icon {
   fill: currentColor;
 }

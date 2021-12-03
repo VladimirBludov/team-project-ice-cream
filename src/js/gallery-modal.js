@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
+    openModalBtn: document.querySelector('.gallery__list'),
+    closeModalBtn: document.querySelector('.gallery-modal__close'),
+    modal: document.querySelector('.gallery-modal'),
   };
 
   const toggleModalOpen = event => {
@@ -10,29 +10,26 @@
 
     if (target.tagName != 'IMG') return;
 
-    document.querySelector('.modal__img').src = target.currentSrc;
+    document.querySelector('.gallery-modal__img').src = target.src;
 
     const isMenuOpen = refs.openModalBtn.getAttribute('aria-expanded') === 'true' || false;
 
     refs.openModalBtn.setAttribute('aria-expanded', !isMenuOpen);
-    refs.modal.classList.toggle('mobile-menu--is-open');
-
     // const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     // bodyScrollLock[scrollLockMethod](document.body);
 
-    refs.modal.classList.toggle('modal--is-hidden');
+    refs.modal.classList.toggle('gallery-modal--is-hidden');
   };
 
   const toggleModalClose = () => {
     const isMenuOpen = refs.openModalBtn.getAttribute('aria-expanded') === 'true' || false;
 
     refs.openModalBtn.setAttribute('aria-expanded', !isMenuOpen);
-    refs.modal.classList.toggle('mobile-menu--is-open');
 
-    const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    // const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+    // bodyScrollLock[scrollLockMethod](document.body);
 
-    refs.modal.classList.toggle('modal--is-hidden');
+    refs.modal.classList.toggle('gallery-modal--is-hidden');
   };
 
   refs.openModalBtn.addEventListener('click', toggleModalOpen);
