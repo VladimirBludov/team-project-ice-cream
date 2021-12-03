@@ -5,11 +5,11 @@
 
 .hero__container {
   position: relative;
-  overflow: hidden;
 
   @include _phone {
     padding-top: 137px;
     padding-bottom: 203px;
+    overflow: hidden;
   }
 }
 
