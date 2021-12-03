@@ -7,6 +7,8 @@
     padding-bottom: 112px;
   }
   @include _desktop {
+    padding-top: 127px;
+    padding-bottom: 119px;
   }
 }
 
@@ -47,7 +49,7 @@
     margin: -130px -10px -10px -10px;
   }
   @include _desktop {
-    margin: -220px -12px -12px -12px;
+    margin: -222px -12px -12px -12px;
   }
 }
 .products__product-card {
@@ -57,7 +59,7 @@
     margin: 130px 10px 10px 10px;
   }
   @include _desktop {
-    margin: 220px 12px 12px 12px;
+    margin: 222px 12px 12px 12px;
   }
   &:not(:last-child) {
     @include _phone {
