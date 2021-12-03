@@ -1,16 +1,16 @@
 /* ----------- Customer reviews Styles ----------- */
 .reviews {
-  padding-top: 80px;
-  padding-bottom: 85px;
+  padding-top: 40px;
+  padding-bottom: 43px;
   background-color: #fff;
 
   @include _tablet {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   @include _desktop {
-    padding-bottom: 130px;
+    padding-bottom: 65px;
   }
 }
 
@@ -20,7 +20,7 @@
   margin-right: auto;
 }
 
-.quote {
+.reviews__quote {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -45,7 +45,7 @@
     display: block;
     position: absolute;
     content: '';
-    background-image: url(/images/customer-review/“.svg);
+    background-image: url(/images/customer-review/quote.svg);
     height: 40px;
     width: 54px;
     top: 28px;
@@ -58,10 +58,10 @@
   }
 }
 
-.quote__text {
+.reviews__text {
   position: relative;
   font-size: 12px;
-  line-height: 255%;
+  line-height: 30.6px;
   text-align: center;
   letter-spacing: 0.04em;
   z-index: 2;
@@ -71,20 +71,18 @@
   @include _tablet {
     font-size: 14px;
     padding: 0 44px 0 20px;
-    line-height: 216%;
+    line-height: 30.4px;
   }
   @include _desktop {
     font-size: 16px;
-    line-height: 186%;
+    line-height: 29.8px;
     padding: 0 35px 0 28px;
   }
 }
 
 .reviews__dot {
-  display: flex;
+  @include centeredFlex();
   margin: 0 auto;
-  justify-content: center;
-  align-items: center;
   flex-shrink: 0;
   background-color: #c7133e;
   border-radius: 50%;
