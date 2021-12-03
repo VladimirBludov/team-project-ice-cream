@@ -1,1 +1,201 @@
-/* ----------- Footer Styles ----------- */
+.footer {
+  background-color: #fff5f6;
+  @include _phone {
+    padding-top: 58px;
+  }
+  @include _tablet {
+    padding-top: 79px;
+  }
+  @include _desktop {
+    padding-top: 82px;
+  }
+  &__content {
+    @include _phone {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    @include _tablet_and_desktop {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  &__description {
+    @include _phone {
+      width: 234px;
+      height: 135px;
+    }
+    @include _tablet {
+      width: 340px;
+      height: 183px;
+    }
+    @include _desktop {
+      width: 477px;
+      height: 115px;
+    }
+  }
+  &__description1 {
+    font-family: Titan One;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: getColor(text-fourth);
+    @include _phone {
+      font-size: 18px;
+    }
+    @include _tablet {
+      font-size: 26px;
+      letter-spacing: 0.04em;
+    }
+    @include _desktop {
+      font-size: 30px;
+      line-height: 1.25;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  &__description2 {
+    font-family: Titan One;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: getColor(accent);
+    @include _phone {
+      margin-top: 17px;
+      font-size: 34px;
+      letter-spacing: 0.04em;
+    }
+    @include _tablet {
+      margin-top: 17px;
+      font-size: 48px;
+      letter-spacing: 0.06em;
+    }
+    @include _desktop {
+      margin-top: 15px;
+      font-size: 58px;
+      line-height: 1.25;
+      letter-spacing: 0.06em;
+    }
+  }
+}
+
+.footer__social {
+  display: flex;
+  justify-content: end;
+  @include _phone {
+    margin-top: 43px;
+  }
+  @include _tablet_and_desktop {
+    margin-top: 0px;
+  }
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28.24px;
+    @include _phone {
+      height: 32px;
+      width: 32px;
+    }
+    @include _tablet_and_desktop {
+      height: 34px;
+      width: 34px;
+    }
+  }
+  &-link {
+    @include centeredFlex();
+    border-radius: 50%;
+    background-color: getColor(icon-bg);
+    transition: background-color 250ms $animation-cubic;
+    &:hover,
+    &:focus {
+      background-color: getColor(icon-primary);
+    }
+    @include _phone {
+      height: 32px;
+      width: 32px;
+    }
+    @include _tablet_and_desktop {
+      height: 34px;
+      width: 34px;
+    }
+  }
+}
+
+.footer__contact {
+  @include _phone {
+    margin-top: 46px;
+  }
+  @include _tablet_and_desktop {
+    margin-top: 0px;
+  }
+  &-description {
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 1.86;
+    text-align: right;
+    margin-top: 46px;
+    @include _phone {
+      font-size: 12px;
+    }
+    @include _tablet {
+      font-size: 14px;
+    }
+    @include _desktop {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+  }
+  &-link {
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 1.86;
+    text-align: right;
+    color: getColor(accent);
+    @include _phone {
+      font-size: 12px;
+    }
+    @include _tablet {
+      font-size: 14px;
+    }
+    @include _desktop {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+  }
+
+}
+
+.footer__signature {
+  @include centeredFlex();
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  @include _phone {
+    display: inline-block;
+    padding-top: 22px;
+    padding-bottom: 25px;
+    margin-top: 43px;
+  }
+  @include _tablet {
+    display: flex;
+    padding-top: 29px;
+    padding-bottom: 18px;
+    margin-top: 91px;
+  }
+  @include _desktop {
+    margin-top: 97px;
+    padding-top: 9px;
+    padding-bottom: 19px;
+  }
+  &-description {
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: center;
+    color: getColor(text-third);
+    @include _tablet_and_desktop {
+      margin-left: 6px;
+    }
+  }
+}
+
