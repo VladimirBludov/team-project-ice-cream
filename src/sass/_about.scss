@@ -2,6 +2,7 @@
 
 .about {
   background-color: getColor('bg-secondary');
+  padding-top: 125px;
 }
 
 .about__lable {
@@ -18,6 +19,7 @@
   min-width: 200px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 26px;
 
   color: getColor('accent');
   font-family: Titan One;
@@ -27,10 +29,32 @@
   text-align: center;
 }
 
+.about_img {
+  display: block;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 46px;
+}
+
 .about__thumb {
   max-width: 220px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about__overlay {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    background-image: url('../images/about/milk-mobile.png');
+    @include _pixel_x2 {
+      background-image: url('../images/about/milk-mobile@2x.png');
+    }
+  }
 }
 
 .about__subtitle_one {
@@ -42,11 +66,13 @@
 }
 
 .about__subtitle_two {
-  color: getColor('text-third');
+  margin-bottom: 46px;
 
+  color: getColor('text-third');
   font-family: DM Sans;
   @include font(12px, 19px, 500);
 }
+
 .about__btn {
   display: flex;
   align-items: center;
@@ -60,13 +86,17 @@
   background-color: getColor('button-text-secondary');
   border-radius: 22px;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: getColor('button-bg-hover');
+  }
 }
 
 .about__btn_text {
+  margin-right: 14px;
   color: getColor('icon-primary');
 
   font-family: DM Sans;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.29;
+  @include font(14px, 18px, 700);
 }
