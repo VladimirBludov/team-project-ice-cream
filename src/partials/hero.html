@@ -30,13 +30,31 @@
         />
         <img class="hero__jug_milk_img" src="#" alt="Кувшин с молоком" />
       </picture>
-      <p class="hero__jug_milk_text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <svg class="hero__arrow">
-        <use href="images/icons.svg#arrow-right"></use>
-      </svg>
+      <div class="hero__jug_milk_text_container">
+        <p class="hero__jug_milk_text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              images/hero/arrow_right_d.png    1x,
+              images/hero/arrow_right_d@2x.png 2x,
+              images/hero/arrow_right_d@3x.png 3x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/hero/arrow_right_t.png    1x,
+              images/hero/arrow_right_t@2x.png 2x,
+              images/hero/arrow_right_t@3x.png 3x
+            "
+          />
+          <img class="hero__arrow" src="#" alt="Стрелка вправо" />
+        </picture>
+      </div>
     </div>
 
     <div class="hero__ice_cream_block">

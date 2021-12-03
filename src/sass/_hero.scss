@@ -11,7 +11,13 @@
     padding-bottom: 203px;
     overflow: hidden;
   }
+  @include _tablet {
+    padding-top: 102px;
+    padding-bottom: 28px;
+  }
 }
+
+/* Title */
 
 .hero__title-block {
   position: relative;
@@ -24,7 +30,10 @@
 
   color: getColor('title-secondary');
   @include _phone {
-    @include font(26px, 30px, 400, 0.04em);
+    @include font(26px, 30px);
+  }
+  @include _tablet {
+    @include font(22px, 25px);
   }
 }
 
@@ -33,13 +42,16 @@
   @include _phone {
     @include font(48px, 46px);
   }
+  @include _tablet {
+    @include font(34px, 31px);
+  }
 }
 
 .hero__anchor {
   display: inline-block;
-  @include _phone {
+  @include _phone_and_tablet {
     margin-top: 19px;
-    padding: 7px;
+    padding: 7px 12px;
     @include font(8px, 10px);
   }
   border-radius: 20px;
@@ -53,38 +65,146 @@
   color: getColor('button-text');
   background-color: getColor('bg-primary');
 
-  @include _phone {
+  @include _phone_and_tablet {
     margin-left: 8px;
   }
 }
 
-.hero__ice_cream_img {
-  position: absolute;
-  animation: appearImg 2000ms;
+/* jug_milk */
+
+.hero__jug_milk_block {
+  @include _phone {
+    display: none;
+  }
+  @include _tablet {
+    margin-top: 19px;
+    display: flex;
+    align-items: flex-end;
+  }
 }
+
+.hero__jug_milk_text_container {
+  width: 114px;
+  position: absolute;
+  left: 130px;
+  bottom: 34px;
+  display: flex;
+  flex-direction: column;
+}
+.hero__jug_milk_text {
+  @include _tablet {
+    @include font(8px, 12px);
+    color: getColor('text-primary');
+  }
+}
+.hero__arrow {
+  @include _tablet {
+    margin-top: 7px;
+  }
+  cursor: pointer;
+}
+
+/* ice_cream */
 
 .hero__ice_cream_block {
   position: absolute;
-  width: 171px;
 
   @include _phone {
-    top: 92px;
-    left: 36.56%;
-    //right: 10%;
+    top: 83px;
+    left: 11.25%;
+    width: 346px;
+    height: 344px;
   }
-  animation: resize 2000ms;
+  @include _tablet {
+    top: 31px;
+    left: 40%;
+    width: 324px;
+    height: 322px;
+  }
+  border-radius: 50%;
+
+  background: getColor('icon-bg');
+  animation: resize 1000ms;
 }
 
-.hero__ice_cream_block::before {
-  content: '';
+.hero__ice_cream_img {
   position: absolute;
-  top: -9px;
-  left: 81px;
-  transform: translate(-50%);
+  @include _phone {
+    top: 9px;
+    left: 81px;
+  }
+  @include _tablet {
+    top: 32px;
+    left: 71px;
+  }
+  animation: appearImg 2000ms;
+}
 
-  width: 346px;
-  height: 344px;
-  background: getColor('icon-bg');
+/* mark_list */
 
+.hero__mark_list {
+  @include _phone {
+    display: none;
+  }
+  @include _tablet {
+    position: absolute;
+    top: 94px;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+}
+.hero__mark_item {
+  position: relative;
+  text-align: center;
+}
+.hero__mark_item + .hero__mark_item {
+  @include _tablet {
+    margin-top: 13px;
+  }
+}
+.hero__mark_item::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: getColor('bg-primary');
   border-radius: 50%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.hero__mark_number {
+  position: relative;
+  font-family: Titan One;
+
+  color: getColor('accent');
+  @include _tablet {
+    @include font(28px, 32px);
+  }
+}
+.hero__mark_text {
+  color: getColor('text-primary');
+  @include _tablet {
+    @include font(8px, 10px);
+  }
+}
+
+.hero__mark_item:last-child .hero__mark_text {
+  width: 51px;
+  text-align: left;
+}
+
+/* girl_img */
+
+.hero__tasty_girl_img {
+  @include _phone {
+    display: none;
+  }
+  @include _tablet {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
