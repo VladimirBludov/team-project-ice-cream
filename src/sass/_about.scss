@@ -1,1 +1,72 @@
 /* ----------- About Styles ----------- */
+
+.about {
+  background-color: getColor('bg-secondary');
+}
+
+.about__lable {
+  padding-bottom: 15px;
+
+  color: getColor('accent-secondary');
+  font-family: Titan One;
+  @include font(18px, 21px, 400);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about__title {
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: getColor('accent');
+  font-family: Titan One;
+  @include font(34px, 39px, 400);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__thumb {
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__subtitle_one {
+  color: getColor('text-secondary');
+
+  font-family: DM Sans;
+  @include font(12px, 19px, 500);
+  margin-bottom: 47px;
+}
+
+.about__subtitle_two {
+  color: getColor('text-third');
+
+  font-family: DM Sans;
+  @include font(12px, 19px, 500);
+}
+.about__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 176px;
+  height: 44px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: getColor('button-text-secondary');
+  border-radius: 22px;
+  border: none;
+}
+
+.about__btn_text {
+  color: getColor('icon-primary');
+
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+}
