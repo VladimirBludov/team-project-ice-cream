@@ -8,6 +8,10 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
+
+  @include _desktop {
+    padding-bottom: 130px;
+  }
 }
 
 .reviews__img {
@@ -29,6 +33,12 @@
     max-width: 620px;
     padding: 41px 34px 34px 42px;
     margin-top: 25px;
+  }
+
+  @include _desktop {
+    max-width: 926px;
+    padding: 47px 54px 32px 50px;
+    margin-top: 15px;
   }
 
   &::before {
@@ -63,6 +73,11 @@
     padding: 0 44px 0 20px;
     line-height: 216%;
   }
+  @include _desktop {
+    font-size: 16px;
+    line-height: 186%;
+    padding: 0 35px 0 28px;
+  }
 }
 
 .reviews__dot {
@@ -79,6 +94,10 @@
 
   @include _tablet {
     margin-top: 18px;
+  }
+
+  @include _desktop {
+    margin-top: 15px;
   }
 
   &::after {
@@ -110,6 +129,11 @@
   text-align: center;
 
   @include _tablet {
+    margin-top: 14px;
+    font-size: 16px;
+  }
+
+  @include _desktop {
     margin-top: 14px;
     font-size: 16px;
   }
