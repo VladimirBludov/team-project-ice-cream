@@ -3,6 +3,11 @@
   padding-top: 80px;
   padding-bottom: 85px;
   background-color: #fff;
+
+  @include _tablet {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .reviews__img {
@@ -20,6 +25,12 @@
   margin-top: 30px;
   padding: 43px 50px 20px 50px;
 
+  @include _tablet {
+    max-width: 620px;
+    padding: 41px 34px 34px 42px;
+    margin-top: 25px;
+  }
+
   &::before {
     display: block;
     position: absolute;
@@ -29,6 +40,11 @@
     width: 54px;
     top: 28px;
     left: 61px;
+
+    @include _tablet {
+      top: 24px;
+      left: 42px;
+    }
   }
 }
 
@@ -41,6 +57,12 @@
   z-index: 2;
   padding: 0 16px 0 7px;
   background-image: repeating-linear-gradient(to top, #e1e1e1, transparent 1px 31px);
+
+  @include _tablet {
+    font-size: 14px;
+    padding: 0 44px 0 20px;
+    line-height: 216%;
+  }
 }
 
 .reviews__dot {
@@ -54,6 +76,10 @@
   width: 4px;
   height: 4px;
   margin-top: 30px;
+
+  @include _tablet {
+    margin-top: 18px;
+  }
 
   &::after {
     flex-shrink: 0;
@@ -82,6 +108,11 @@
   margin-top: 18px;
   line-height: 186%;
   text-align: center;
+
+  @include _tablet {
+    margin-top: 14px;
+    font-size: 16px;
+  }
 }
 
 .slick-dots {
