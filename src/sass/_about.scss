@@ -5,17 +5,18 @@
   padding-top: 125px;
   padding-bottom: 20px;
 
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  //   background-position: bottom;
-  //   width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
 
-  //   @media screen and (max-width: 480px) {
-  //     background-image: url('../images/about/milk-mobile.png');
-  //     @include _pixel_x2 {
-  //       background-image: url('../images/about/milk-mobile@2x.png');
-  //     }
-  //   }
+  width: 100%;
+
+  @media screen and (max-width: 480px) {
+    background-image: url('../images/about/milk-mobile.png');
+    @include _pixel_x2 {
+      background-image: url('../images/about/milk-mobile@2x.png');
+    }
+  }
 }
 
 .about__label {
@@ -58,20 +59,6 @@
   }
 }
 
-.about__overlay {
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
-  width: 100%;
-
-  @media screen and (max-width: 480px) {
-    background-image: url('../images/about/milk-mobile.png');
-    @include _pixel_x2 {
-      background-image: url('../images/about/milk-mobile@2x.png');
-    }
-  }
-}
-
 .about__subtitle_one {
   color: getColor('text-secondary');
 
@@ -80,7 +67,18 @@
   margin-bottom: 30px;
 }
 
+.about__wrap {
+}
+
 .about__subtitle_two {
+  margin-bottom: 20px;
+
+  color: getColor('text-third');
+  font-family: DM Sans;
+  @include font(12px, 19px, 500);
+}
+
+.about__subtitle_three {
   margin-bottom: 20px;
 
   color: getColor('text-third');
