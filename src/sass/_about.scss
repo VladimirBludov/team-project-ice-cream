@@ -4,6 +4,18 @@
   background-color: getColor('bg-secondary');
   padding-top: 125px;
   padding-bottom: 20px;
+
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   background-position: bottom;
+  //   width: 100%;
+
+  //   @media screen and (max-width: 480px) {
+  //     background-image: url('../images/about/milk-mobile.png');
+  //     @include _pixel_x2 {
+  //       background-image: url('../images/about/milk-mobile@2x.png');
+  //     }
+  //   }
 }
 
 .about__label {
@@ -65,11 +77,11 @@
 
   font-family: DM Sans;
   @include font(12px, 19px, 500);
-  margin-bottom: 47px;
+  margin-bottom: 30px;
 }
 
 .about__subtitle_two {
-  margin-bottom: 46px;
+  margin-bottom: 20px;
 
   color: getColor('text-third');
   font-family: DM Sans;
