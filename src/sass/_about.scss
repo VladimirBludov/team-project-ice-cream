@@ -40,7 +40,8 @@
   }
 
   @media screen and (min-width: 1280px) {
-    background-position: bottom;
+    background-size: 1280px 534px;
+    background-position: center 342px;
     background-image: url('../images/about/milk-desktop.png');
     @include _pixel_x2 {
       background-image: url('../images/about/milk-desktop@2x.png');
