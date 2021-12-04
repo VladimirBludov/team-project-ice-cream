@@ -13,6 +13,11 @@
     padding-bottom: 33px;
   }
 
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 40px;
+  }
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 90%;
@@ -26,7 +31,7 @@
     }
   }
 
-  @media screen and (min-width: 481px) and (max-width: 1280px) {
+  @media screen and (min-width: 481px) {
     background-image: url('../images/about/milk-desktop.png');
     @include _pixel_x2 {
       background-image: url('../images/about/milk-desktop@2x.png');
@@ -45,6 +50,10 @@
 
   @media screen and (min-width: 768px) {
     @include font(26px, 30px, 400);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(30px, 34px, 400);
   }
 }
 
@@ -65,11 +74,22 @@
     @include font(48px, 55px, 400);
     margin-bottom: 50px;
   }
+
+  @media screen and (min-width: 1280px) {
+    @include font(58px, 66px, 400);
+    margin-bottom: 55px;
+  }
 }
 
 .about__block {
   @media screen and (min-width: 768px) {
     @include centeredFlex();
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include centeredFlex();
+    justify-content: space-between;
     margin-bottom: 55px;
   }
 }
@@ -84,6 +104,11 @@
     align-self: flex-start;
     margin-right: 15px;
   }
+
+  @media screen and (min-width: 1280px) {
+    align-self: flex-start;
+    margin-right: 75px;
+  }
 }
 
 .about__img_image {
@@ -97,9 +122,13 @@
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 55px;
     max-width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 465px;
   }
 }
 
@@ -113,6 +142,10 @@
   @media screen and (min-width: 768px) {
     @include font(14px, 25px, 500);
   }
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 28px, 500);
+  }
 }
 
 .about__subtitle_two {
@@ -124,6 +157,10 @@
 
   @media screen and (min-width: 768px) {
     @include font(14px, 25px, 500);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(14px, 27px, 500);
   }
 }
 
@@ -139,6 +176,11 @@
   @media screen and (min-width: 768px) {
     @include font(14px, 25px, 500);
     margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(14px, 27px, 500);
+    margin-bottom: 45px;
   }
 }
 
