@@ -26,8 +26,15 @@
 .hero__title-block {
   position: relative;
   z-index: 10;
+  @include _phone {
+    max-width: 218px;
+  }
+  @include _tablet {
+    max-width: 162px;
+  }
   @include _desktop {
     margin-left: 69px;
+    max-width: 277px;
   }
 }
 
@@ -155,20 +162,20 @@
   position: absolute;
 
   @include _phone {
-    top: 83px;
     left: 11.25%;
+    bottom: 75px;
     width: 346px;
     height: 344px;
   }
   @include _tablet {
-    top: 31px;
     left: 40%;
+    bottom: 46px;
     width: 324px;
     height: 322px;
   }
   @include _desktop {
-    top: 52px;
     left: 37.1%;
+    bottom: 75px;
     width: 538px;
     height: 538px;
   }
@@ -191,7 +198,7 @@
     top: 56px;
     left: 119px;
   }
-  animation: appearImg 2000ms, resize 1000ms;
+  animation: appearImg 2000ms $animation-cubic;
 }
 
 /* mark_list */
