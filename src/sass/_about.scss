@@ -2,8 +2,16 @@
 
 .about {
   background-color: getColor('bg-secondary');
-  padding-top: 125px;
-  padding-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -18,7 +26,7 @@
     }
   }
 
-  @media screen and (min-width: 481px) and (max-width: 1200px) {
+  @media screen and (min-width: 481px) and (max-width: 1280px) {
     background-image: url('../images/about/milk-desktop.png');
     @include _pixel_x2 {
       background-image: url('../images/about/milk-desktop@2x.png');
@@ -42,7 +50,6 @@
 
 .about__title {
   min-width: 200px;
-  margin-bottom: 26px;
 
   color: getColor('accent');
   font-family: Titan One;
@@ -50,15 +57,19 @@
   text-transform: uppercase;
   text-align: center;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 26px;
+  }
+
   @media screen and (min-width: 768px) {
     @include font(48px, 55px, 400);
+    margin-bottom: 100px;
   }
 }
 
 .about__block {
   @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: flex-end;
+    @include centeredFlex();
     margin-bottom: 55px;
   }
 }
@@ -70,6 +81,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    align-self: flex-start;
     margin-right: 15px;
   }
 }
@@ -86,6 +98,7 @@
     margin-right: auto;
   }
   @media screen and (min-width: 768px) {
+    padding-top: 55px;
     max-width: 340px;
   }
 }
@@ -125,6 +138,7 @@
 
   @media screen and (min-width: 768px) {
     @include font(14px, 25px, 500);
+    margin-bottom: 62px;
   }
 }
 
