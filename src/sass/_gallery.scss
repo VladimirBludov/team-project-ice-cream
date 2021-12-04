@@ -4,7 +4,7 @@
     padding-bottom: 40px;
   }
 
-  @include _tablet {
+  @include _tablet_and_desktop {
     padding-top: 70px;
     padding-bottom: 60px;
   }
@@ -25,6 +25,10 @@
   @include _tablet {
     column-gap: 4px;
   }
+
+  @include _desktop {
+    column-gap: 8px;
+  }
 }
 
 .gallery__item {
@@ -36,7 +40,8 @@
   &:hover,
   &:focus {
     transform: scale(1.2);
-    border: 1px solid rgba(212, 20, 67, 0.5);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -51,6 +56,11 @@
     height: 85px;
   }
 
+  @include _desktop {
+    width: 138px;
+    height: 138px;
+  }
+
   &--accent {
     @include _phone {
       width: 80px;
@@ -60,6 +70,11 @@
     @include _tablet {
       width: 174px;
       height: 174px;
+    }
+
+    @include _desktop {
+      width: 285px;
+      height: 285px;
     }
   }
 }
@@ -78,6 +93,10 @@
   @include _tablet {
     row-gap: 4px;
   }
+
+  @include _desktop {
+    row-gap: 8px;
+  }
 }
 
 .gallery__column-3 {
@@ -91,5 +110,9 @@
 
   @include _tablet {
     padding-bottom: 58px;
+  }
+
+  @include _desktop {
+    padding-bottom: 92px;
   }
 }

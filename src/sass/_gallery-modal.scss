@@ -28,6 +28,7 @@
   position: relative;
   top: 50%;
   left: 50%;
+  display: inline-block;
   padding: 15px;
 
   @include _phone {
@@ -35,7 +36,15 @@
   }
 
   @include _tablet {
-    max-width: 730px;
+    max-width: 700px;
+  }
+
+  @include _desktop {
+    max-width: 1050px;
+  }
+
+  @include _landscape {
+    max-width: 40vw;
   }
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -57,14 +66,6 @@
   margin: auto;
   border-radius: 16px;
   overflow: hidden;
-
-  @include _phone {
-    min-height: 260px;
-  }
-
-  @include _tablet {
-    min-height: 700px;
-  }
 }
 
 .gallery-modal__img {

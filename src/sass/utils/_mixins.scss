@@ -87,6 +87,11 @@
     @content;
   }
 }
+@mixin _landscape {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
 
 // миксины на картинку
 @mixin _pixel_x1 {
