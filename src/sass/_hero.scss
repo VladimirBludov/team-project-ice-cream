@@ -145,16 +145,35 @@
     @include font(14px, 20px);
   }
 }
-.hero__arrow {
+.hero__arrow_container {
   cursor: pointer;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   @include _tablet {
+    width: 26px;
+    height: 26px;
     margin-top: 7px;
+    @include _media_img('hero', 'arrow_right_d.png');
   }
   @include _desktop {
+    width: 18px;
+    height: 18px;
     margin-top: 20px;
+    @include _media_img('hero', 'arrow_right_t.png');
   }
 }
 
+.hero__arrow_container:focus,
+.hero__arrow_container:hover:hover {
+  @include _tablet {
+    @include _media_img('hero', 'arrow_right_hov_d.png');
+  }
+  @include _desktop {
+    @include _media_img('hero', 'arrow_right_hov_t.png');
+  }
+}
 /* ice_cream */
 
 .hero__ice_cream_block {
