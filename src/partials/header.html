@@ -1,8 +1,12 @@
 <section class="header">
 <header class="header">
-  <div class="conteiner header__conteiner">
+  <div class="container header__container">
   <nav class="header__nav">
-  <a  class="link header__logo" href=""><img src="images/header/logo 1.png" alt="logo"></a>
+  <a  class="link header__logo" href="">
+    <picture>
+      <source media="(min-width: 767px)" srcset="images/header/logo-1.png, images/header/logo-1@2x.png, images/header/logo-1@3x.png" type="image/png">
+      <img src="images/header/logo-1.png" alt="logo" loading="lazy"></a>
+    </picture>
 </nav>
    <!--mobile menu -->
 <button class="burger-btn">
@@ -11,7 +15,7 @@
   </svg>
 </button>
 <div class="mobile-menu">
-<button class="mobile-btn" type="button">Buy now</button>
+<button class="mobile-btn" type="button" modal>Buy now</button>
   <div class="mobile-menu-nav">
       <nav class="mobile-nav">
           <ul class="mobile-nav__list list">
