@@ -168,13 +168,14 @@
     height: 344px;
   }
   @include _tablet {
-    left: 40%;
     bottom: 46px;
     width: 324px;
     height: 322px;
   }
+  @include _tablet_and_desktop {
+    left: 40%;
+  }
   @include _desktop {
-    left: 37.1%;
     bottom: 75px;
     width: 538px;
     height: 538px;
