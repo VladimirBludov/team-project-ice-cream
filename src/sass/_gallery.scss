@@ -1,26 +1,66 @@
 .gallery {
-  padding-top: 48px;
-  padding-bottom: 40px;
+  @include _phone {
+    padding-top: 48px;
+    padding-bottom: 40px;
+  }
+
+  @include _tablet {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  background-image: linear-gradient(
+    to bottom,
+    getColor('bg-secondary') 50%,
+    getColor('bg-primary') 50%
+  );
 }
 
 .gallery__list {
   @include centeredFlex();
-  column-gap: 2px;
+  @include _phone {
+    column-gap: 2px;
+  }
+
+  @include _tablet {
+    column-gap: 4px;
+  }
 }
 
 .gallery__item {
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 250ms $animation-cubic;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    border: 1px solid rgba(212, 20, 67, 0.5);
+  }
 }
 
 .gallery__img {
-  width: 40px;
-  height: 40px;
+  @include _phone {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include _tablet {
+    width: 85px;
+    height: 85px;
+  }
 
   &--accent {
-    width: 80px;
-    height: 80px;
+    @include _phone {
+      width: 80px;
+      height: 80px;
+    }
+
+    @include _tablet {
+      width: 174px;
+      height: 174px;
+    }
   }
 }
 
@@ -31,7 +71,13 @@
 .gallery__column-6 {
   display: flex;
   flex-direction: column;
-  row-gap: 2px;
+  @include _phone {
+    row-gap: 2px;
+  }
+
+  @include _tablet {
+    row-gap: 4px;
+  }
 }
 
 .gallery__column-3 {
@@ -39,5 +85,11 @@
 }
 
 .gallery__column-5 {
-  padding-bottom: 26px;
+  @include _phone {
+    padding-bottom: 26px;
+  }
+
+  @include _tablet {
+    padding-bottom: 58px;
+  }
 }

@@ -10,7 +10,7 @@
 
     if (target.tagName != 'IMG') return;
 
-    document.querySelector('.gallery-modal__img').src = target.src;
+    document.querySelector('.gallery-modal__img').src = target.currentSrc;
 
     const isMenuOpen = refs.openModalBtn.getAttribute('aria-expanded') === 'true' || false;
 
