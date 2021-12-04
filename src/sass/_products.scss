@@ -226,26 +226,26 @@
       background-image: url('../images/products/arrow-right-1@3x.png');
     }
   }
-}
-.product-card__button--orange:hover,
-.product-card__button--orange:focus {
-  background-image: url('../images/products/arrow-right-2.png');
-  @include _pixel_x2 {
-    background-image: url('../images/products/arrow-right-2@2x.png');
-  }
+  &--orange:hover,
+  &--orange:focus {
+    background-image: url('../images/products/arrow-right-2.png');
+    @include _pixel_x2 {
+      background-image: url('../images/products/arrow-right-2@2x.png');
+    }
 
-  @include _pixel_x3 {
-    background-image: url('../images/products/arrow-right-2@3x.png');
+    @include _pixel_x3 {
+      background-image: url('../images/products/arrow-right-2@3x.png');
+    }
   }
-}
-.product-card__button--green:hover,
-.product-card__button--green:focus {
-  background-image: url('../images/products/arrow-right-3.png');
-  @include _pixel_x2 {
-    background-image: url('../images/products/arrow-right-3@2x.png');
-  }
+  &--green:hover,
+  &--green:focus {
+    background-image: url('../images/products/arrow-right-3.png');
+    @include _pixel_x2 {
+      background-image: url('../images/products/arrow-right-3@2x.png');
+    }
 
-  @include _pixel_x3 {
-    background-image: url('../images/products/arrow-right-3@3x.png');
+    @include _pixel_x3 {
+      background-image: url('../images/products/arrow-right-3@3x.png');
+    }
   }
 }
