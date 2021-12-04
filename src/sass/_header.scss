@@ -1,15 +1,15 @@
 .header {
     padding-top: 6px;
-    background-color: #FFB8CA;
+    background-color: getColor('bg-fifth');
     }
 .burger-btn {
     display: block;
     margin-left: auto;
-    background-color: #FFB8CA;;
+    background-color: getColor('bg-fifth');
     border: none;
     line-height: 0;
     padding: 0;
-    fill: #D41443;
+    fill: getColor('button-text');
     }
 .burger-icon {
     width: 20px;
@@ -22,7 +22,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #E17992;
+    background-color: getColor('mobile-menu-bg');
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -39,11 +39,11 @@
     position: absolute;
     top: 23px;
     right: 29px;
-    background-color: #E17992;
+    background-color: getColor('mobile-menu-bg');
     border: none;
     line-height: 0;
     padding: 0;
-    fill: #ffffff;
+    fill: getColor('icon-secondary');
 }
 .close-btn-icon {
     width: 14px;
@@ -52,21 +52,47 @@
 .mobile-btn {
     width: 209px;
     height: 44px;
-    background: #FFFFFF;
+    background: getColor('icon-secondary');
     border-radius: 22px;
     border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
 }
 .mobile-btn-icon {
     width: 5.26px;
     height: 8px;
     margin-left: 28px;
 }
-.mobile-nav__item:not(:last-child) {
-    margin-bottom: 23px;
+.mobile-btn-wrap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.31;
+    color: getColor('button-text');
+}
+.mobile-nav__item {
+    padding-top: 10px;
+    padding-bottom: 13px;
+    border-top: 1px solid #E18298;
+    border-bottom: 1px solid #E18298;
+}
+
+.mobile-nav__link {
+font-family: DM Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.28;
+color: getColor('text-primary');
+&:hover, &:focus {
+    color: getColor('button-text');
+}
 }
 .close-btn-icon.click {
     opacity: 0;
@@ -83,3 +109,4 @@
     align-items: center;
     margin-right: auto;  
     }
+    
