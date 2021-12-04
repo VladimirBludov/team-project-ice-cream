@@ -50,7 +50,7 @@
 .hero__anchor {
   display: inline-block;
   @include _phone_and_tablet {
-    margin-top: 19px;
+    margin-top: 20px;
     padding: 7px 12px;
     @include font(8px, 10px);
   }
