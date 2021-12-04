@@ -8,14 +8,14 @@
     padding-bottom: 20px;
   }
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     padding-top: 130px;
     padding-bottom: 33px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   background-repeat: no-repeat;
@@ -24,14 +24,21 @@
 
   width: 100%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     background-image: url('../images/about/milk-mobile.png');
     @include _pixel_x2 {
       background-image: url('../images/about/milk-mobile@2x.png');
     }
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url('../images/about/milk-desktop.png');
+    @include _pixel_x2 {
+      background-image: url('../images/about/milk-desktop@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
     background-image: url('../images/about/milk-desktop.png');
     @include _pixel_x2 {
       background-image: url('../images/about/milk-desktop@2x.png');
@@ -84,13 +91,12 @@
 .about__block {
   @media screen and (min-width: 768px) {
     @include centeredFlex();
-    margin-bottom: 50px;
   }
 
   @media screen and (min-width: 1280px) {
     @include centeredFlex();
+    align-items: start;
     justify-content: space-between;
-    margin-bottom: 55px;
   }
 }
 
@@ -129,6 +135,7 @@
 
   @media screen and (min-width: 1280px) {
     max-width: 465px;
+    padding-top: 50px;
   }
 }
 
