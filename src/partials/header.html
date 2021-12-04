@@ -1,22 +1,30 @@
 <section class="header">
 <header class="header">
   <div class="container header__container">
+    <a  class="link header__logo" href=""></a>
   <nav class="header__nav">
-  <a  class="link header__logo" href="">
     <picture>
-      <source media="(min-width: 767px)" srcset="images/header/logo-1.png, images/header/logo-1@2x.png, images/header/logo-1@3x.png" type="image/png">
+      <source media="(max-width: 20px)" srcset="images/header/logo-1.png, images/header/logo-1@2x.png, images/header/logo-1@3x.png" type="image/png">
       <img src="images/header/logo-1.png" alt="logo" loading="lazy"></a>
     </picture>
+    <ul class="header__list list">
+      <li class="header__item"><a class="header__link link" href="#header.html">Home</a></li>
+      <li class="header__item"><a class="header__link link" href="#hero.html">About us</li>
+      <li class="header__item"><a class="header__link link" href="#about.html">How it’s made?</a></li>
+      <li class="header__item"><a class="header__link link" href="#gallery.html">Our products</a></li>
+      <li class="header__item"><a class="header__link link" href="#contacts.html">Contact</a></li>
+  </ul>
 </nav>
+
    <!--mobile menu -->
 <button class="burger-btn js-open-menu">
-  <svg class="burger-icon">
-      <use href="images/icons.svg#burger" width="20" height="12"></use>
+  <svg class="burger-icon" width="20" height="12">
+      <use href="images/icons.svg#burger"></use>
   </svg>
 </button>
 <div class="mobile-menu js-menu-container">
-<button class="mobile-btn mobile-btn-wrap" type="button" modal>Buy now<svg class="mobile-btn-icon">
-  <use href="images/icons.svg#arrow" width="2.26px" height="8"></use>
+<button class="mobile-btn mobile-btn-wrap" type="button" modal>Buy now<svg class="mobile-btn-icon" width="2.26px" height="8">
+  <use href="images/icons.svg#arrow"></use>
 </svg></button>
   <div class="mobile-menu-nav">
       <nav class="mobile-nav">
@@ -30,11 +38,16 @@
       </nav>
   </div>
   <button class="close-mobile-btn js-close-menu">
-      <svg class="close-btn-icon">
-          <use href="images/icons.svg#close" width="14" height="14"></use>
+      <svg class="close-btn-icon" width="14" height="14">
+          <use href="images/icons.svg#close"></use>
       </svg>
   </button>
 </div>
-</div>
 <!--End mobile menu -->
+<button class="header__btn header__btn-wrap" type="button" modal>Buy now<svg class="mobile-btn-icon" width="2.26px" height="8">
+  <use href="images/icons.svg#arrow"></use>
+</svg></button>
+</div>
+
+
 </section>

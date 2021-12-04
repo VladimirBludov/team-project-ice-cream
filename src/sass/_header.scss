@@ -10,10 +10,9 @@
     line-height: 0;
     padding: 0;
     fill: getColor('button-text');
+    @include _desktop {
+        display: none;
     }
-.burger-icon {
-    width: 20px;
-    height: 12px;
     }
 .mobile-menu {
     position: fixed;
@@ -45,10 +44,6 @@
     padding: 0;
     fill: getColor('icon-secondary');
 }
-.close-btn-icon {
-    width: 14px;
-    height: 14px;
-}
 .mobile-btn {
     width: 209px;
     height: 44px;
@@ -60,9 +55,34 @@
     justify-content: center;
     margin-bottom: 22px;
 }
+.header__btn{
+    width: 160px;
+    height: 44px;
+    background: getColor('icon-secondary');
+    border-radius: 22px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    @include _phone {
+        display: none;
+    }
+}
+.header__btn-wrap {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: DM Sans;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    color: getColor('button-text');
+    @include _phone {
+        display: none;
+    }
+}
 .mobile-btn-icon {
-    width: 5.26px;
-    height: 8px;
     margin-left: 28px;
 }
 .mobile-btn-wrap {
@@ -70,8 +90,7 @@
     margin-left: auto;
     margin-right: auto;
     font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     color: getColor('button-text');
@@ -85,8 +104,7 @@
 
 .mobile-nav__link {
 font-family: DM Sans;
-font-style: normal;
-font-weight: bold;
+font-weight: 700;
 font-size: 14px;
 line-height: 1.28;
 color: getColor('text-primary');
@@ -107,6 +125,30 @@ color: getColor('text-primary');
 .header__nav{
     display: flex;
     align-items: center;
-    margin-right: auto;  
+    margin-right: auto; 
+    margin-left: auto; 
+    justify-content:center;
     }
-    
+.header__list {
+    @media screen and (min-width:1269px) {
+        display: flex;
+        margin-left: 110px;
+    } 
+}
+.header__list {
+    @media screen and (max-width: 1269px) {
+        display: none;
+    }}
+.header__item:not(:last-child) {
+    margin-right: 35px;
+    }
+.header__link {
+font-family: DM Sans;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.31;
+color: getColor('text-primary');
+&:hover, &:focus {
+    color: getColor('button-text');
+}
+}
