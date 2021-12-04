@@ -2,8 +2,21 @@
 
 .about {
   background-color: getColor('bg-secondary');
-  padding-top: 125px;
-  padding-bottom: 20px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 130px;
+    padding-bottom: 33px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 20px;
+  }
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -11,10 +24,27 @@
 
   width: 100%;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     background-image: url('../images/about/milk-mobile.png');
     @include _pixel_x2 {
       background-image: url('../images/about/milk-mobile@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-position: bottom;
+    background-image: url('../images/about/milk-desktop.png');
+    @include _pixel_x2 {
+      background-image: url('../images/about/milk-desktop@2x.png');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-size: 1280px 534px;
+    background-position: center 342px;
+    background-image: url('../images/about/milk-desktop.png');
+    @include _pixel_x2 {
+      background-image: url('../images/about/milk-desktop@2x.png');
     }
   }
 }
@@ -27,23 +57,67 @@
   @include font(18px, 21px, 400);
   text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    @include font(26px, 30px, 400);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(30px, 34px, 400);
+  }
 }
 
 .about__title {
   min-width: 200px;
-  margin-bottom: 26px;
 
   color: getColor('accent');
   font-family: Titan One;
   @include font(34px, 39px, 400);
   text-transform: uppercase;
   text-align: center;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 26px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font(48px, 55px, 400);
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(58px, 66px, 400);
+    margin-bottom: 55px;
+  }
+}
+
+.about__block {
+  @media screen and (min-width: 768px) {
+    @include centeredFlex();
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include centeredFlex();
+    align-items: start;
+    justify-content: space-between;
+  }
 }
 
 .about__img {
   display: block;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 46px;
+  }
 
-  margin-bottom: 46px;
+  @media screen and (min-width: 768px) {
+    align-self: flex-start;
+    margin-right: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    align-self: flex-start;
+    margin-right: 75px;
+  }
 }
 
 .about__img_image {
@@ -57,6 +131,15 @@
     margin-left: auto;
     margin-right: auto;
   }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 55px;
+    max-width: 340px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 465px;
+    padding-top: 50px;
+  }
 }
 
 .about__subtitle_one {
@@ -65,9 +148,14 @@
   font-family: DM Sans;
   @include font(12px, 19px, 500);
   margin-bottom: 30px;
-}
 
-.about__wrap {
+  @media screen and (min-width: 768px) {
+    @include font(14px, 25px, 500);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 28px, 500);
+  }
 }
 
 .about__subtitle_two {
@@ -76,14 +164,34 @@
   color: getColor('text-third');
   font-family: DM Sans;
   @include font(12px, 19px, 500);
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 25px, 500);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(14px, 27px, 500);
+  }
 }
 
 .about__subtitle_three {
-  margin-bottom: 20px;
-
   color: getColor('text-third');
   font-family: DM Sans;
   @include font(12px, 19px, 500);
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include font(14px, 25px, 500);
+    margin-bottom: 62px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(14px, 27px, 500);
+    margin-bottom: 45px;
+  }
 }
 
 .about__btn {
@@ -110,4 +218,8 @@
 
   font-family: DM Sans;
   @include font(14px, 18px, 700);
+
+  @media screen and (min-width: 768px) {
+    @include font(16px, 21px, 700);
+  }
 }

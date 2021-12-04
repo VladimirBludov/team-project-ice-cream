@@ -87,6 +87,11 @@
     @content;
   }
 }
+@mixin _landscape {
+  @media screen and (orientation: landscape) {
+    @content;
+  }
+}
 
 // миксины на картинку
 @mixin _pixel_x1 {
@@ -104,5 +109,15 @@
 @mixin _pixel_x3 {
   @media screen and (min-device-pixel-ratio: 3), (min-resolution: 288dpi), (min-resolution: 3dppx) {
     @content;
+  }
+}
+
+@mixin _media_img($section, $img) {
+  background-image: url('../images/' + $section + '/' + $img);
+  @include _pixel_x2 {
+    background-image: url('../images/' + $section + '/' + $img);
+  }
+  @include _pixel_x3 {
+    background-image: url('../images/' + $section + '/' + $img);
   }
 }

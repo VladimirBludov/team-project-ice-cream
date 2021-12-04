@@ -1,24 +1,78 @@
 /* ----------- Advantages Styles ----------- */
 .advantages {
-  padding-top: 20px;
-  padding-bottom: 48px;
   background-color: getColor('bg-secondary');
+
+  @include _phone {
+    padding-top: 20px;
+    padding-bottom: 48px;
+  }
+
+  @include _tablet {
+    padding-top: 33px;
+  }
+
+  @include _tablet_and_desktop {
+    display: flex;
+    margin: -30px;
+    padding-bottom: 70px;
+  }
+
+  @include _desktop {
+    padding-top: 20px;
+  }
+}
+
+.advantages__list {
+  @include _tablet {
+    display: flex;
+    margin: -30px;
+  }
+
+  @include _desktop {
+    display: flex;
+    margin: -15px;
+  }
 }
 
 .advantages__item {
-  max-width: 230px;
+  @include _phone {
+    max-width: 230px;
+  }
+
+  @include _tablet {
+    flex-basis: calc((100% - 3 * 60px) / 3);
+    margin: 30px;
+  }
+
+  @include _desktop {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
 }
 
 .advantages__item:not(:last-child) {
-  margin-bottom: 38px;
+  @include _phone {
+    margin-bottom: 38px;
+  }
 }
 
 .advantages__item::before {
   content: '';
   display: block;
-  margin-bottom: 16px;
   height: 50px;
   background-size: cover;
+
+  @include _phone {
+    margin-bottom: 16px;
+  }
+
+  @include _tablet {
+    margin-bottom: 36px;
+  }
+
+  @include _desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__item:first-child::before {
@@ -62,17 +116,41 @@
 
 .advantages__accent {
   display: block;
-  margin-bottom: 20px;
 
   font-family: Titan One;
-  @include font(36px, 41px);
   text-transform: uppercase;
-
   color: getColor('accent');
+
+  @include _phone {
+    @include font(36px, 41px);
+  }
+
+  @include _phone_and_tablet {
+    margin-bottom: 20px;
+  }
+
+  @include _tablet {
+    @include font(48px, 55px);
+  }
+
+  @include _desktop {
+    margin-bottom: 15px;
+    @include font(58px, 66px);
+  }
 }
 
 .advantages__text {
-  @include font(12px, 20px, 700);
-
   color: getColor('text-secondary');
+
+  @include _phone {
+    @include font(12px, 20px, 700, 0.02);
+  }
+
+  @include _tablet {
+    @include font(14px, 24px, 700, 0.02);
+  }
+
+  @include _desktop {
+    @include font(16px, 28px, 700, 0.02);
+  }
 }
