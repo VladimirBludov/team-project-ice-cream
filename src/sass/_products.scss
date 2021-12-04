@@ -96,7 +96,7 @@
   width: 249px;
   height: 252px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   @include _tablet_and_desktop {
     top: -102px;
     width: 100%;
@@ -206,7 +206,7 @@
   border: none;
   display: block;
   background-image: url('../images/products/arrow-right.png');
-  background-size: cover;
+  background-size: contain;
   transition: background-image 250ms $animation-cubic;
   @include _pixel_x2 {
     background-image: url('../images/products/arrow-right@2x.png');
