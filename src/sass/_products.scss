@@ -169,7 +169,7 @@
   width: 26px;
   height: 6px;
   background-image: url('../images/products/points.png');
-  background-size: contain;
+  background-size: cover;
   @include _pixel_x2 {
     background-image: url('../images/products/points@2x.png');
   }
@@ -202,52 +202,25 @@
   }
 }
 .product-card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   border: none;
   display: block;
-  background-image: url('../images/products/arrow-right.png');
-  background-size: contain;
-  transition: background-image 250ms $animation-cubic;
-  @include _pixel_x2 {
-    background-image: url('../images/products/arrow-right@2x.png');
-  }
-
-  @include _pixel_x3 {
-    background-image: url('../images/products/arrow-right@3x.png');
-  }
+  transition: background-color 250ms $animation-cubic;
   &:hover,
   &:focus {
-    background-image: url('../images/products/arrow-right-1.png');
-    @include _pixel_x2 {
-      background-image: url('../images/products/arrow-right-1@2x.png');
-    }
-
-    @include _pixel_x3 {
-      background-image: url('../images/products/arrow-right-1@3x.png');
-    }
+    background-color: getColor('accent');
   }
-  &--orange:hover,
-  &--orange:focus {
-    background-image: url('../images/products/arrow-right-2.png');
-    @include _pixel_x2 {
-      background-image: url('../images/products/arrow-right-2@2x.png');
-    }
-
-    @include _pixel_x3 {
-      background-image: url('../images/products/arrow-right-2@3x.png');
-    }
-  }
-  &--green:hover,
-  &--green:focus {
-    background-image: url('../images/products/arrow-right-3.png');
-    @include _pixel_x2 {
-      background-image: url('../images/products/arrow-right-3@2x.png');
-    }
-
-    @include _pixel_x3 {
-      background-image: url('../images/products/arrow-right-3@3x.png');
-    }
+}
+.product-card__icon {
+  fill: getColor('button-text');
+  transition: fill 250ms $animation-cubic;
+  .product-card__button:hover &,
+  .product-card__button:focus & {
+    fill: getColor('button-text-secondary');
   }
 }
