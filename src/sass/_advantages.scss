@@ -8,11 +8,17 @@
   }
 
   @include _tablet {
+    padding-top: 33px;
+  }
+
+  @include _tablet_and_desktop {
     display: flex;
     margin: -30px;
-
-    padding-top: 33px;
     padding-bottom: 70px;
+  }
+
+  @include _desktop {
+    padding-top: 20px;
   }
 }
 
@@ -20,6 +26,11 @@
   @include _tablet {
     display: flex;
     margin: -30px;
+  }
+
+  @include _desktop {
+    display: flex;
+    margin: -15px;
   }
 }
 
@@ -31,6 +42,11 @@
   @include _tablet {
     flex-basis: calc((100% - 3 * 60px) / 3);
     margin: 30px;
+  }
+
+  @include _desktop {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
   }
 }
 
@@ -52,6 +68,10 @@
 
   @include _tablet {
     margin-bottom: 36px;
+  }
+
+  @include _desktop {
+    margin-bottom: 40px;
   }
 }
 
@@ -96,7 +116,6 @@
 
 .advantages__accent {
   display: block;
-  margin-bottom: 20px;
 
   font-family: Titan One;
   text-transform: uppercase;
@@ -106,8 +125,17 @@
     @include font(36px, 41px);
   }
 
+  @include _phone_and_tablet {
+    margin-bottom: 20px;
+  }
+
   @include _tablet {
     @include font(48px, 55px);
+  }
+
+  @include _desktop {
+    margin-bottom: 15px;
+    @include font(58px, 66px);
   }
 }
 
@@ -115,10 +143,14 @@
   color: getColor('text-secondary');
 
   @include _phone {
-    @include font(12px, 20px, 700);
+    @include font(12px, 20px, 700, 0.02);
   }
 
   @include _tablet {
-    @include font(14px, 24px, 700);
+    @include font(14px, 24px, 700, 0.02);
+  }
+
+  @include _desktop {
+    @include font(16px, 28px, 700, 0.02);
   }
 }
