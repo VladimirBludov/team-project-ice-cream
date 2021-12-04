@@ -42,6 +42,7 @@
     @include font(58px, 66px);
   }
 }
+
 .products__list {
   @include _tablet_and_desktop {
     display: flex;
@@ -52,6 +53,7 @@
     margin: -12px;
   }
 }
+
 .products__product-card {
   margin-left: auto;
   margin-right: auto;
