@@ -15,8 +15,8 @@
     const isMenuOpen = refs.openModalBtn.getAttribute('aria-expanded') === 'true' || false;
 
     refs.openModalBtn.setAttribute('aria-expanded', !isMenuOpen);
-    // const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
-    // bodyScrollLock[scrollLockMethod](document.body);
+    const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
 
     refs.modal.classList.toggle('gallery-modal--is-hidden');
   };
@@ -26,8 +26,8 @@
 
     refs.openModalBtn.setAttribute('aria-expanded', !isMenuOpen);
 
-    // const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
-    // bodyScrollLock[scrollLockMethod](document.body);
+    const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
 
     refs.modal.classList.toggle('gallery-modal--is-hidden');
   };
