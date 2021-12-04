@@ -6,12 +6,10 @@
     display: block;
     margin-left: auto;
     background-color: #FFB8CA;;
-    cursor: pointer;
     border: none;
     line-height: 0;
     padding: 0;
     fill: #D41443;
-    transition: color 250ms linear;
     }
 .burger-icon {
     width: 20px;
@@ -28,13 +26,53 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     overflow: hidden;
     padding: 60px 21px;
     }
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    }
 
+.close-mobile-btn {
+    position: absolute;
+    top: 23px;
+    right: 29px;
+    background-color: #E17992;
+    border: none;
+    line-height: 0;
+    padding: 0;
+    fill: #ffffff;
+}
+.close-btn-icon {
+    width: 14px;
+    height: 14px;
+}
+.mobile-btn {
+    width: 209px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 22px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.mobile-btn-icon {
+    width: 5.26px;
+    height: 8px;
+    margin-left: 28px;
+}
+.mobile-nav__item:not(:last-child) {
+    margin-bottom: 23px;
+}
+.close-btn-icon.click {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    }
 .header__container{
     display: flex;
     align-items: center;

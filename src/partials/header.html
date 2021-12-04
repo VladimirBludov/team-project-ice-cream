@@ -9,13 +9,15 @@
     </picture>
 </nav>
    <!--mobile menu -->
-<button class="burger-btn">
+<button class="burger-btn js-open-menu">
   <svg class="burger-icon">
       <use href="images/icons.svg#burger" width="20" height="12"></use>
   </svg>
 </button>
-<div class="mobile-menu">
-<button class="mobile-btn" type="button" modal>Buy now</button>
+<div class="mobile-menu js-menu-container">
+<button class="mobile-btn" type="button" modal>Buy now<svg class="mobile-btn-icon">
+  <use href="images/icons.svg#arrow" width="2.26px" height="8"></use>
+</svg></button>
   <div class="mobile-menu-nav">
       <nav class="mobile-nav">
           <ul class="mobile-nav__list list">
@@ -27,9 +29,9 @@
           </ul>
       </nav>
   </div>
-  <button class="close-mobile-btn" type="button">
+  <button class="close-mobile-btn js-close-menu">
       <svg class="close-btn-icon">
-          <use href="images/icons.svg#burger" width="14" height="14"></use>
+          <use href="images/icons.svg#close" width="14" height="14"></use>
       </svg>
   </button>
 </div>
