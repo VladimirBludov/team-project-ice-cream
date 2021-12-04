@@ -33,7 +33,6 @@
     max-width: 162px;
   }
   @include _desktop {
-    margin-left: 69px;
     max-width: 277px;
   }
 }
@@ -118,7 +117,7 @@
   }
   @include _desktop {
     margin-top: 56px;
-    margin-left: 31px;
+    margin-left: -53px;
   }
 }
 
@@ -168,14 +167,13 @@
     height: 344px;
   }
   @include _tablet {
+    left: 40%;
     bottom: 46px;
     width: 324px;
     height: 322px;
   }
-  @include _tablet_and_desktop {
-    left: 40%;
-  }
   @include _desktop {
+    left: 33.8%;
     bottom: 75px;
     width: 538px;
     height: 538px;
@@ -299,6 +297,6 @@
     right: 0;
   }
   @include _desktop {
-    right: 12px;
+    right: 9px;
   }
 }
