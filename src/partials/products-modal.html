@@ -1,6 +1,6 @@
 <div class="products-modal">
   <div class="container products-modal__container">
-    <button class="products-modal__close-btn" data-menu-close aria-label="Закрыть">
+    <button class="products-modal__close-btn" data-modal-close aria-label="Закрыть">
       <svg class="products-modal__close-icon">
         <use href="./images/icons.svg#close-modal"></use>
       </svg>
@@ -9,21 +9,86 @@
     <div class="products-modal__block">
       <h1 class="products-modal__title">Icecream</h1>
       <picture>
-        <source media="" srcset="./images/products/products-1.png" type="image/png" />
+        <source
+          media="(min-width: 1279px)"
+          srcset="
+            ./images/products/products-1-d.webp    1x,
+            /images/products/products-1-d@2x.webp  2x,
+            ./images/products/products-1-d@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/products/products-1-t.webp    1x,
+            ./images/products/products-1-t@2x.webp 2x,
+            ./images/products/products-1-t@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/products/products-1.webp    1x,
+            ./images/products/products-1@2x.webp 2x,
+            ./images/products/products-1@3x.webp 3x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 1279px)"
+          srcset="
+            ./images/products/products-1-d.png    1x,
+            ./images/products/products-1-d@2x.png 2x,
+            ./images/products/products-1-d@3x.png 3x
+          "
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/products/products-1-t.png    1x,
+            ./images/products/products-1-t@2x.png 2x,
+            ./images/products/products-1-t@3x.png 3x
+          "
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/products/products-1.png    1x,
+            ./images/products/products-1@2x.png 2x,
+            ./images/products/products-1@3x.png 3x
+          "
+          type="image/png"
+        />
 
         <img class="products-modal__img" src="#" alt="Icecream" />
       </picture>
 
-      <!-- <p class="products-modal__label">
+      <p class="products-modal__label">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. A ducimus, consectetur vitae
         aliquid sit provident totam.
-      </p> -->
+      </p>
     </div>
     <div class="products-modal__section">
       <div class="products-modal__img-block">
         <picture>
-          <source media="" srcset="./images/products/Icecream-cup.png" type="image/png" />
-
+          <source
+            srcset="
+              ./images/products/icecream-cup.webp    1x,
+              ./images/products/icecream-cup@2x.webp 2x,
+              ./images/products/icecream-cup@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/icecream-cup.png    1x,
+              ./images/products/icecream-cup@2x.png 2x,
+              ./images/products/icecream-cup@3x.png 3x
+            "
+            type="image/png"
+          />
           <img class="products-modal__img" src="#" alt="Icecream" />
         </picture>
 
@@ -55,7 +120,22 @@
       </div>
       <div class="products-modal__img-block">
         <picture>
-          <source media="" srcset="./images/products/Icecream-balls.png" type="image/png" />
+          <source
+            srcset="
+              ./images/products/icecream-balls.webp    1x,
+              ./images/products/icecream-balls@2x.webp 2x,
+              ./images/products/icecream-balls@3x.webp 3x
+            "
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/products/icecream-balls.png    1x,
+              ./images/products/icecream-balls@2x.png 2x,
+              ./images/products/icecream-balls@3x.png 3x
+            "
+            type="image/png"
+          />
 
           <img class="products-modal__img" src="#" alt="Icecream" />
         </picture>

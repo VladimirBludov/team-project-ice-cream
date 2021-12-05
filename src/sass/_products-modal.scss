@@ -72,17 +72,19 @@
 }
 
 .products-modal__block {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 320px;
   border-radius: 50%;
   background: getColor('title-primary');
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.6);
   @include _phone {
     max-width: 320px;
   }
   @include _tablet_and_desktop {
+    margin-bottom: 40px;
     width: 320px;
   }
   @include _desktop {
@@ -97,11 +99,15 @@
   }
 }
 .products-modal__section {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   @include _tablet_and_desktop {
+    margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  @include _desktop {
+    justify-content: space-around;
   }
 }
 .products-modal__subtitle {
@@ -125,19 +131,18 @@
   height: 280px;
   border-radius: 50%;
   background: getColor('title-primary');
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.6);
   @include _phone {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     max-width: 280px;
   }
 
   @include _tablet_and_desktop {
-    margin-right: 20px;
     width: 280px;
   }
   @include _desktop {
-    margin-right: 20px;
     width: 320px;
     height: 320px;
   }
