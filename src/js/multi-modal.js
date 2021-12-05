@@ -23,14 +23,16 @@
       });
 })(window.Element.prototype);
 
+/* идея в том чтобы назначать кнопке открытия атрибут с номером data-modal-open="1"
+и назначать модальному окну атрибут data-modal-container="1"с таким же номером, 
+открытие модалки происходит добавлением класса .active */
 document.addEventListener('DOMContentLoaded', function () {
-  /* Записываем в переменные массив элементов-кнопок и подложку.
-      Подложке зададим номер, чтобы не влиять на другие элементы с классом overlay*/
+  /* Записываем в переменные массив элементов-кнопок и подложку. */
   var modalButtons = document.querySelectorAll('[data-modal-open]'),
     overlay = document.querySelector('[data-modal]'),
     closeButtons = document.querySelectorAll('[data-modal-close]');
 
-  /* Перебираем массив кнопок */
+  /* Перебираем массивы кнопок */
   modalButtons.forEach(function (item) {
     /* Назначаем каждой кнопке обработчик клика */
     item.addEventListener('click', btnModal);
@@ -40,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', btnModal);
   }); // end foreach
 
-  //закрывает модальное окно при нажатии кнопки Escape
+  /* закрывает модальное окно при нажатии кнопки Escape */
   document.body.addEventListener(
     'keyup',
     function (e) {
@@ -56,8 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function btnModal(e) {
     e.preventDefault();
-    /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal-container
-            и будем искать модальное окно с таким же атрибутом. Если атрибут пустой выбираем ближайший. */
+    /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal-open
+            и будем искать модальное окно с таким же номером. Если атрибут пустой, значит
+            мы нажали на кнопку закрыть и выбираем модальное окно в котором она расположена. */
     var modalId = this.getAttribute('data-modal-open');
     modalElem = modalId
       ? document.querySelector('[data-modal-container="' + modalId + '"]')
