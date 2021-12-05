@@ -9,4 +9,4 @@ const e=document.querySelector(".scroll__up");function o(){pageYOffset<document.
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/modal"),require("./js/up"),require("./js/gallery-modal.js");
 },{"./sass/main.scss":"clu1","./js/modal":"RSqK","./js/up":"kzJA","./js/gallery-modal.js":"McB9"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-ice-cream/src.43563aa8.js.map
+//# sourceMappingURL=/team-project-ice-cream/src.164d9b04.js.map
