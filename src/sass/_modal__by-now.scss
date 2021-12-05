@@ -1,16 +1,32 @@
 .modal__container--by_now {
+  padding: 40px;
+  background-color: getColor('mobile-menu-bg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
   @include _phone {
     min-width: 320px;
+    @include _pixel_x1 {
+      background-image: url(../images/read-bg/read-bg-1x.png);
+    }
+    @include _pixel_x2 {
+      background-image: url(../images/read-bg/read-bg-2x.png);
+    }
   }
-  @include _tablet {
+  @include _tablet_and_desktop {
     min-width: 400px;
+    @include _pixel_x1 {
+      background-image: url(../images/read-bg/read-bg-1x-tablet.png);
+    }
+    @include _pixel_x2 {
+      background-image: url(../images/read-bg/read-bg-2x-tablet.png);
+    }
   }
 
   @include _desktop {
     max-width: 500px;
   }
-  padding: 40px;
-  background-color: getColor('mobile-menu-bg');
 }
 
 .modal-form {
