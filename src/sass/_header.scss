@@ -65,6 +65,10 @@
     align-items: center;
     justify-content: center;
     margin-right: 30px;
+    transition: background-color 250ms $animation-cubic;
+    &:hover, &:focus {
+        background-color: getColor('button-bg-hover');
+    }
     @include _phone {
         display: none;
     }
@@ -78,6 +82,7 @@
     font-size: 16px;
     line-height: 1.31;
     color: getColor('button-text');
+
     @include _phone {
         display: none;
     }
@@ -108,6 +113,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.28;
 color: getColor('text-primary');
+transition: color 250ms $animation-cubic;
 &:hover, &:focus {
     color: getColor('button-text');
 }
