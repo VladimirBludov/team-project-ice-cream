@@ -142,6 +142,7 @@ transition: color 250ms $animation-cubic;
     @include  _desktop {
         display: flex;
         margin-left: 110px;
+        max-width: 541px;
     } 
 }
 .header__item:not(:last-child) {
