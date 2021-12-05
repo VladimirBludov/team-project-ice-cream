@@ -54,8 +54,13 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  fill: #444;
+  fill: getColor('text-third');
   cursor: pointer;
   background-color: getColor('bg-fifth');
   border-radius: 50%;
+}
+
+.modal__cross:hover {
+  fill: getColor('accent');
+  background-color: getColor('bg-secondary');
 }
