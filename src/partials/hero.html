@@ -4,8 +4,18 @@
       <h1 class="hero__title">
         Ice cream made with <span class="hero__title-accent">passion</span>
       </h1>
-      <a href="#products" class="hero__anchor hero__anchor--products">Products</a>
-      <a href="#about" class="hero__anchor hero__anchor--about">How it’s made?</a>
+      <a
+        aria-label="Ссылка на продукты"
+        href="#products"
+        class="hero__anchor hero__anchor--products"
+        >Products</a
+      >
+      <a
+        aria-label="Ссылка на как это изготовлено"
+        href="#about"
+        class="hero__anchor hero__anchor--about"
+        >How it’s made?</a
+      >
     </div>
 
     <div class="hero__jug_milk_block">
@@ -51,7 +61,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <div class="hero__arrow_container"></div>
+        <div aria-label="Описание молока" class="hero__arrow_container"></div>
       </div>
     </div>
 
@@ -159,4 +169,6 @@
       <img class="hero__tasty_girl_img" src="#" alt="Девушка с мороженым" />
     </picture>
   </div>
+  <!-- Подложка под модальным окном -->
+  <div class="modal__backdrop" data-modal></div>
 </section>
