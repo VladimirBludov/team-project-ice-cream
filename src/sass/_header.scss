@@ -141,7 +141,7 @@ transition: color 250ms $animation-cubic;
     }
     @include  _desktop {
         display: flex;
-        margin-left: 110px;
+        margin-left: 75px;
         max-width: 541px;
     } 
 }
