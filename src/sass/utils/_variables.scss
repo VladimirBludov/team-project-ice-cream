@@ -1,10 +1,12 @@
 $colors: (
   'accent': #d41443,
   'accent-secondary': #ffa5ba,
+  'accent-third': #c7133e,
   'text-primary': #ffffff,
   'text-secondary': #000000,
   'text-third': #907e82,
   'text-fourth': #ffa5ba,
+  'bg-hero': #ffb8ca,
   'bg-primary': #ffffff,
   'bg-secondary': #fff5f6,
   'bg-third': #f0d1a5,
@@ -20,6 +22,10 @@ $colors: (
   'button-text': #d41443,
   'button-text-secondary': #ffffff,
   'button-bg-hover': #ecebeb,
+  'button-shadow': rgba(0, 0, 0, 0.15),
+  'input-border': rgba(33, 33, 33, 0.2),
+  'input-placeholder': rgba(117, 117, 117, 0.5),
+  'modal-bg': #e17992,
 );
 
 @function getColor($key) {

@@ -1,6 +1,6 @@
 /* ----------- Hero Styles ----------- */
 .hero {
-  background: #ffb8ca;
+  background: getColor('bg-hero');
 }
 
 .hero__container {
@@ -87,7 +87,7 @@
 }
 .hero__anchor--products:focus,
 .hero__anchor--products:hover {
-  background-color: #c7133e;
+  background-color: getColor('accent-third');
 }
 .hero__anchor--about {
   color: getColor('button-text');
