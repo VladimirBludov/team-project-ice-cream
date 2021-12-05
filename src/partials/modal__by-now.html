@@ -4,7 +4,7 @@
         <use href="./images/icons.svg#modal_close"></use>
       </svg>
     <form action="#" class="modal-form">
-      <p class="modal-form__head">Оставьте свои данные, мы вам перезвоним</p>
+      <p class="modal-form__head">Leave your details, we will call you back</p>
 
       <label class="modal-form__label">
         Имя
@@ -15,7 +15,7 @@
             name="user-name"
             minlength="2"
             pattern="[a-zA-Zа-яёА-ЯЁ]+"
-            title="Имя должно содержать символы кириллицы или латиницы"
+            title="The name must contain Cyrillic or Latin characters"
             required
           />
           <svg class="icon modal-form__icon" width="18" height="18">
@@ -31,7 +31,7 @@
             type="tel"
             class="modal-form__input"
             name="user-tel"
-            title="Телефон должен быть формата 0991110000"
+            title="The phone must be in the format 0991110000"
             pattern="[0-9]{10}"
             required
           />
@@ -48,7 +48,7 @@
             type="email"
             class="modal-form__input"
             name="user-email"
-            title="Почта должна быть формата user@gmail.com"
+            title="Mail must be in the format user@gmail.com"
             pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
             required
           />
@@ -63,7 +63,7 @@
         <textarea
           class="modal-form__message"
           name="user-message"
-          placeholder="Введите текст"
+          placeholder="Enter message"
         ></textarea>
       </label>
 
@@ -72,11 +72,11 @@
         <svg class="subscribe-form__check-icon icon" width="15" height="14">
           <use href="./images/icons.svg#icon_check"></use>
         </svg>
-        &nbsp; Соглашаюсь со сроками и принимаю &nbsp;
-        <a class="modal-form__policy" href="#">Условия поставки</a>
+        &nbsp; I agree with the terms and accept &nbsp;
+        <a class="modal-form__policy" href="#">Delivery conditions</a>
       </label>
 
-      <button aria-label="Отправить" class="modal-form__button" type="submit">Отправить</button>
+      <button aria-label="Send" class="modal-form__button" type="submit">Send</button>
     </form>
   </div>
 </div>
