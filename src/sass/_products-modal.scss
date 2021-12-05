@@ -1,0 +1,168 @@
+.products-modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 15px;
+  background-color: #ffb8ca;
+  //   opacity: 0;
+  //   visibility: hidden;
+  //   pointer-events: none;
+  transition: opacity 250ms $animation-cubic, visibility 250ms $animation-cubic;
+}
+.products-modal__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.products-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+.products-modal__close-btn {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  border: none;
+}
+
+.products-modal__close-icon {
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms $animation-cubic;
+  &:hover,
+  &:focus {
+    fill: getColor('accent');
+  }
+}
+.products-modal__title {
+  @include font(34px, 39px);
+  text-align: center;
+  font-family: Titan One;
+  text-transform: uppercase;
+  color: getColor('text-primary');
+  @include _desktop {
+    @include font(48px, 55px);
+  }
+}
+.products-modal__label {
+  @include font(14px, 18px, 700);
+  text-align: center;
+  color: getColor('text-primary');
+  @include _desktop {
+    @include font(16px, 24px, 700);
+  }
+}
+.products-modal__text {
+  @extend .products-modal__label;
+  @include font(16px, 24px, 700);
+  @include _desktop {
+    @include font(18px, 28px, 700);
+  }
+}
+
+.products-modal__block {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 320px;
+  border-radius: 50%;
+  background: getColor('title-primary');
+  @include _phone {
+    max-width: 320px;
+  }
+  @include _tablet_and_desktop {
+    width: 320px;
+  }
+  @include _desktop {
+    width: 380px;
+    height: 380px;
+  }
+}
+.products-modal__img {
+  width: 210px;
+  @include _desktop {
+    width: 250px;
+  }
+}
+.products-modal__section {
+  margin-bottom: 40px;
+  @include _tablet_and_desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.products-modal__subtitle {
+  @extend .products-modal__title;
+  @include font(24px, 28px);
+
+  @include _desktop {
+    @include font(28px, 34px);
+  }
+}
+.products-modal__section--mobile-hidden {
+  @include _phone {
+    display: none;
+  }
+}
+.products-modal__img-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  border-radius: 50%;
+  background: getColor('title-primary');
+  @include _phone {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    max-width: 280px;
+  }
+
+  @include _tablet_and_desktop {
+    margin-right: 20px;
+    width: 280px;
+  }
+  @include _desktop {
+    margin-right: 20px;
+    width: 320px;
+    height: 320px;
+  }
+}
+.products-modal__description {
+  @include _tablet_and_desktop {
+    width: 50%;
+  }
+}
+.products-modal__btn {
+  width: 140px;
+  height: 40px;
+  color: getColor('button-text-secondary');
+  background-color: getColor('accent');
+  @include font(14px, 18px);
+  border: none;
+  border-radius: 20px;
+  transition: color 250ms $animation-cubic, background-color 250ms $animation-cubic;
+  @include _desktop {
+    width: 160px;
+    height: 50px;
+  }
+}
+.products-modal__btn:hover,
+.products-modal__btn:focus {
+  color: getColor('accent');
+  background-color: getColor('button-bg-hover');
+}
