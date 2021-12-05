@@ -1,11 +1,11 @@
 <!-- Модальное окно кнопки "Купить сейчас" -->
-  <div class="modal__container modal__container--by_now" data-modal-container="1">
-      <svg class="modal__cross js-modal-close" data-modal-close>
-        <use href="./images/icons.svg#modal_close"></use>
-      </svg>
-    <form action="#" class="modal-form">
-      <p class="modal-form__head">Leave your details, we will call you back</p>
-
+<div class="modal__container modal__container--by_now" data-modal-container="1">
+  <svg class="modal__cross js-modal-close" data-modal-close>
+    <use href="./images/icons.svg#modal_close"></use>
+  </svg>
+  <form action="#" class="modal-form">
+    <p class="modal-form__head">Leave your details, we will call you back</p>
+    <span class="modal-form__input_container">
       <label class="modal-form__label">
         Имя
         <span class="modal-form__wrapper">
@@ -57,26 +57,26 @@
           </svg>
         </span>
       </label>
+    </span>
 
-      <label class="modal-form__label">
-        Заказ
-        <textarea
-          class="modal-form__message"
-          name="user-message"
-          placeholder="Enter message"
-        ></textarea>
-      </label>
+    <label class="modal-form__label">
+      Заказ
+      <textarea
+        class="modal-form__message"
+        name="user-message"
+        placeholder="Enter message"
+      ></textarea>
+    </label>
 
-      <label class="modal-form__checkbox-label">
-        <input type="checkbox" class="modal-form__checkbox visually-hidden" required />
-        <svg class="subscribe-form__check-icon icon" width="15" height="14">
-          <use href="./images/icons.svg#icon_check"></use>
-        </svg>
-        &nbsp; I agree with the terms and accept &nbsp;
-        <a class="modal-form__policy" href="#">Delivery conditions</a>
-      </label>
+    <label class="modal-form__checkbox-label">
+      <input type="checkbox" class="modal-form__checkbox visually-hidden" required />
+      <svg class="subscribe-form__check-icon icon" width="15" height="14">
+        <use href="./images/icons.svg#icon_check"></use>
+      </svg>
+      &nbsp; I agree with the terms and accept &nbsp;
+      <a class="modal-form__policy" href="#">Delivery conditions</a>
+    </label>
 
-      <button aria-label="Send" class="modal-form__button" type="submit">Send</button>
-    </form>
-  </div>
+    <button aria-label="Send" class="modal-form__button" type="submit">Send</button>
+  </form>
 </div>
