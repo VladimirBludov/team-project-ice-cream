@@ -5,7 +5,6 @@
   opacity: 0;
   visibility: hidden;
 
-  overflow-y: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -25,6 +24,7 @@
 
   /*  Центрируем и задаем z-index */
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   z-index: 30; /* Должен быть выше чем у подложки*/
@@ -32,10 +32,8 @@
   height: 100%;
   /*  Задаём тень и закругление краёв  */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-
   border-radius: 3px;
-  transition: 300ms opacity $animation-cubic, 300ms visibility $animation-cubic,
-    300ms transform $animation-cubic;
+  transition: 300ms opacity $animation-cubic, 300ms visibility $animation-cubic;
 }
 
 /* Стили для активных классов подложки и окна */
