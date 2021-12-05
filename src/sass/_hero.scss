@@ -146,10 +146,12 @@
   }
 }
 .hero__arrow_container {
-  cursor: pointer;
+  display: block;
+  border: none;
   border-radius: 50%;
   @include centeredFlex();
-  color: getColor('button-text');
+
+  color: getColor('accent');
   background-color: getColor('icon-secondary');
   @include _tablet {
     width: 26px;
@@ -167,7 +169,7 @@
 .hero__arrow_container:focus,
 .hero__arrow_container:hover:hover {
   color: getColor('icon-secondary');
-  background-color: getColor('button-text');
+  background-color: getColor('accent');
 }
 .hero__arrow {
   fill: currentColor;
