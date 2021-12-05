@@ -148,30 +148,36 @@
 .hero__arrow_container {
   cursor: pointer;
   border-radius: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include centeredFlex();
+  color: getColor('button-text');
+  background-color: getColor('icon-secondary');
   @include _tablet {
     width: 26px;
     height: 26px;
     margin-top: 7px;
-    @include _media_img('hero', 'arrow_right_d.png');
   }
   @include _desktop {
     width: 18px;
     height: 18px;
     margin-top: 20px;
-    @include _media_img('hero', 'arrow_right_t.png');
   }
+  transition: color 250ms $animation-cubic, background-color 250ms $animation-cubic;
 }
 
 .hero__arrow_container:focus,
 .hero__arrow_container:hover:hover {
+  color: getColor('icon-secondary');
+  background-color: getColor('button-text');
+}
+.hero__arrow {
+  fill: currentColor;
   @include _tablet {
-    @include _media_img('hero', 'arrow_right_hov_d.png');
+    width: 8px;
+    height: 8px;
   }
   @include _desktop {
-    @include _media_img('hero', 'arrow_right_hov_t.png');
+    width: 5px;
+    height: 5px;
   }
 }
 /* ice_cream */
