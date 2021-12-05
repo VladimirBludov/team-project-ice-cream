@@ -17,6 +17,13 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  mobileMenu.addEventListener('click', e => {
+    let target = e.target;
+
+    if (target.tagName != 'A') return;
+
+    toggleMenu();
+  });
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.

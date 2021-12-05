@@ -1,6 +1,6 @@
 .header {
     padding-top: 6px;
-    background-color: getColor('bg-sixth');
+    background-color: getColor('bg-sixth');  
     }
 .burger-btn {
     display: block;
@@ -10,6 +10,7 @@
     line-height: 0;
     padding: 0;
     fill: getColor('button-text');
+    background: transparent;
     @include _tablet {
         margin-right: 30px;
     }
@@ -21,7 +22,8 @@
     position: fixed;
     z-index: 100;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100vw;
     height: 100vh;
     background-color: getColor('mobile-menu-bg');
@@ -70,6 +72,7 @@
     transition: background-color 250ms $animation-cubic;
     &:hover, &:focus {
         background-color: getColor('button-bg-hover');
+        border-radius: 22px;
     }
     @include  _desktop {
         margin-left: auto;
@@ -129,7 +132,15 @@ transition: color 250ms $animation-cubic;
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100; 
+    @media screen and (min-width:100px) and (max-width: 479px) {
+        width: 100%;
     }
+}
+
 .header__nav{
     display: flex;
     align-items: center;
