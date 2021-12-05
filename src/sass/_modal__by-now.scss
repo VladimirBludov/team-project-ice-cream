@@ -1,3 +1,18 @@
+.modal__container--by_now {
+  @include _phone {
+    min-width: 320px;
+  }
+  @include _tablet {
+    min-width: 400px;
+  }
+
+  @include _desktop {
+    max-width: 500px;
+  }
+  padding: 40px;
+  background-color: getColor('mobile-menu-bg');
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;

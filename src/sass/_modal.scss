@@ -23,19 +23,6 @@
   opacity: 0;
   visibility: hidden;
 
-  /*  Установаем ширину окна  */
-  @include _phone {
-    min-width: 320px;
-  }
-  @include _tablet {
-    min-width: 400px;
-  }
-
-  @include _desktop {
-    max-width: 500px;
-  }
-  padding: 40px;
-
   /*  Центрируем и задаем z-index */
   position: fixed;
   top: 50%;
@@ -43,11 +30,10 @@
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
 
-  /*  Побочные стили   */
+  /*  Задаём тень и закругление краёв  */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
 
   border-radius: 3px;
-  background-color: getColor('mobile-menu-bg');
   transition: 300ms opacity $animation-cubic, 300ms visibility $animation-cubic,
     300ms transform $animation-cubic;
 }
