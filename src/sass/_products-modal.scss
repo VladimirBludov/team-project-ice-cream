@@ -7,9 +7,11 @@
   height: 100vh;
   padding: 15px;
   background-color: #ffb8ca;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  overflow: auto;
+  // opacity: 0;
+
+  // visibility: hidden;
+  // pointer-events: none;
   transition: opacity 250ms $animation-cubic, visibility 250ms $animation-cubic;
 }
 .products-modal__container {
