@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 body {
   background-color: getColor('bg-primary');
@@ -8,4 +9,8 @@ body {
   @media screen and (min-width: 320) {
     overflow-x: hidden;
   }
+}
+
+.disable-scroll {
+  overflow: hidden;
 }

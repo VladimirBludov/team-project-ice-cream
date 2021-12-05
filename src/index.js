@@ -1,3 +1,4 @@
 import './sass/main.scss';
-import './modal';
-import './up';
+import './js/modal';
+import './js/up';
+import './js/gallery-modal.js';

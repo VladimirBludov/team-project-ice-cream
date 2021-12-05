@@ -3,6 +3,7 @@
     openModalBtn: document.querySelector('.gallery__list'),
     closeModalBtn: document.querySelector('.gallery-modal__close'),
     modal: document.querySelector('.gallery-modal'),
+    body: document.querySelector('.body'),
   };
 
   const toggleModalOpen = event => {
@@ -18,6 +19,7 @@
     const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
 
+    refs.body.classList.toggle('disable-scroll');
     refs.modal.classList.toggle('gallery-modal--is-hidden');
   };
 
@@ -29,6 +31,7 @@
     const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
 
+    refs.body.classList.toggle('disable-scroll');
     refs.modal.classList.toggle('gallery-modal--is-hidden');
   };
 
