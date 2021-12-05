@@ -10,7 +10,7 @@
 
     opacity: 1;
     visibility: visible;
-    transition: opacity 250ms $animation-cubic, visibility 250ms $animation-cubic;
+    transition: opacity 500ms $animation-cubic, visibility 500ms $animation-cubic;
   }
 
   &--is-hidden {
