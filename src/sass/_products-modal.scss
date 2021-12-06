@@ -1,18 +1,10 @@
 .products-modal {
   position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
   width: 100vw;
   height: 100vh;
   padding: 15px;
   background-color: #ffb8ca;
   overflow: auto;
-  // opacity: 0;
-
-  // visibility: hidden;
-  // pointer-events: none;
-  transition: opacity 250ms $animation-cubic, visibility 250ms $animation-cubic;
 }
 .products-modal__container {
   display: flex;
@@ -20,11 +12,6 @@
   align-items: center;
 }
 
-.products-modal.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
 .products-modal__close-btn {
   position: absolute;
   top: 20px;
