@@ -11,8 +11,6 @@
 @import './utils/animations';
 @import './utils/visually-hidden';
 
-@import './products-modal';
-
 @import './utils/up';
 @import './common/base';
 @import './common/container';
@@ -29,5 +27,6 @@
 @import './modals/modal';
 @import './modals/modal__by-now';
 @import './modals/read_more';
+@import './modals/modal__products';
 @import './modals/modal__locations';
 @import './modals/modal__franchise';

@@ -42,25 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', btnModal);
   }); // end foreach
 
-  /* закрывает модальное окно при нажатии кнопки Escape */
-  document.body.addEventListener(
-    'keyup',
-    function (e) {
-      var key = e.key;
-      if (key == 'Escape') {
-        modalElem = document.querySelector('.modal__container.active');
-        toggleModal(modalElem);
-      }
-    },
-    false,
-  );
-
   function btnModal(e) {
     e.preventDefault();
     /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal-open
             и будем искать модальное окно с таким же номером. Если атрибут пустой, значит
             мы нажали на кнопку закрыть и выбираем модальное окно в котором она расположена. */
     var modalId = this.getAttribute('data-modal-open');
+    removePrevModal(e);
     /* После того как нашли нужное модальное окно, добавим или уберём классы
         подложке и окну чтобы показать или скрыть их. */
     if (modalId) {
@@ -80,5 +68,25 @@ document.addEventListener('DOMContentLoaded', function () {
       overlay.classList.remove('active');
       document.body.classList.remove('disable-scroll');
     }
+    function removePrevModal(e) {
+      var modalContainers = document.querySelectorAll('[data-modal-container]');
+      modalContainers.forEach(function (container) {
+        if (container.contains(e.target)) {
+          removeModal(container);
+        }
+      });
+    }
+    /* закрывает модальное окно при нажатии кнопки Escape */
+    document.body.addEventListener(
+      'keyup',
+      function (e) {
+        var key = e.key;
+        if (key == 'Escape') {
+          modalElem = document.querySelector('.modal__container.active');
+          removeModal(modalElem);
+        }
+      },
+      false,
+    );
   }
 }); // end ready

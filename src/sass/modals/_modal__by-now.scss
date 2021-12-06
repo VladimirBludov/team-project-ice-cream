@@ -1,4 +1,5 @@
 .modal__container--by_now {
+  z-index: 150;
   padding: 40px;
   background-color: getColor('modal-bg');
   background-repeat: no-repeat;
@@ -25,13 +26,15 @@
   @include _tablet {
     max-height: 609px;
     max-width: 450px;
-    @include сenteringXY();
   }
-
+  @include _tablet_and_desktop {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
   @include _desktop {
     max-width: 528px;
     max-height: 581px;
-    @include сenteringXY();
   }
 }
 
