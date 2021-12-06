@@ -81,11 +81,7 @@
   justify-content: center;
   margin-bottom: 22px;
 }
-.mobile-btn:hover,
-.mobile-btn:focus {
-  color: getColor('button-text-secondary');
-  background-color: getColor('accent-third');
-}
+
 .header__btn {
   width: 160px;
   height: 44px;
