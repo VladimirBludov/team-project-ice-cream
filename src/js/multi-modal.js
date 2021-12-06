@@ -42,19 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
     item.addEventListener('click', btnModal);
   }); // end foreach
 
-  /* закрывает модальное окно при нажатии кнопки Escape */
-  document.body.addEventListener(
-    'keyup',
-    function (e) {
-      var key = e.key;
-      if (key == 'Escape') {
-        modalElem = document.querySelector('.modal__container.active');
-        removeModal(modalElem);
-      }
-    },
-    false,
-  );
-
   function btnModal(e) {
     e.preventDefault();
     /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal-open
@@ -89,5 +76,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     }
+    /* закрывает модальное окно при нажатии кнопки Escape */
+    document.body.addEventListener(
+      'keyup',
+      function (e) {
+        var key = e.key;
+        if (key == 'Escape') {
+          modalElem = document.querySelector('.modal__container.active');
+          removeModal(modalElem);
+        }
+      },
+      false,
+    );
   }
 }); // end ready
