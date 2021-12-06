@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var key = e.key;
       if (key == 'Escape') {
         modalElem = document.querySelector('.modal__container.active');
-        toggleModal(modalElem);
+        removeModal(modalElem);
       }
     },
     false,
