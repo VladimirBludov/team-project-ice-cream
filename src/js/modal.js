@@ -18,6 +18,6 @@
     bodyScrollLock[scrollLockMethod](document.body);
 
     refs.body.classList.toggle('disable-scroll');
-    refs.modalAbout.classList.toggle('visually-hidden');
+    refs.modalAbout.classList.toggle('is-open');
   }
 })();

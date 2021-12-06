@@ -1,5 +1,7 @@
 /* ----------- Products Styles ----------- */
 .products {
+  position: relative;
+  z-index: 5;
   padding-top: 121px;
   padding-bottom: 98px;
   background-color: getColor('bg-primary');

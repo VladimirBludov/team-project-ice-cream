@@ -1,0 +1,13 @@
+.modal__locations-container {
+  @include сenteringXY();
+}
+
+.modal__locations_iframe {
+  width: 1050px;
+  height: 768px;
+
+  @include _phone_and_tablet {
+    max-height: 80vh;
+    max-width: 80vw;
+  }
+}
