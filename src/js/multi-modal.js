@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
             и будем искать модальное окно с таким же номером. Если атрибут пустой, значит
             мы нажали на кнопку закрыть и выбираем модальное окно в котором она расположена. */
     var modalId = this.getAttribute('data-modal-open');
+    removePrevModal(e);
     /* После того как нашли нужное модальное окно, добавим или уберём классы
         подложке и окну чтобы показать или скрыть их. */
     if (modalId) {
@@ -79,6 +80,14 @@ document.addEventListener('DOMContentLoaded', function () {
       modalElem.classList.remove('active');
       overlay.classList.remove('active');
       document.body.classList.remove('disable-scroll');
+    }
+    function removePrevModal(e) {
+      var modalContainers = document.querySelectorAll('[data-modal-container]');
+      modalContainers.forEach(function (container) {
+        if (container.contains(e.target)) {
+          removeModal(container);
+        }
+      });
     }
   }
 }); // end ready
