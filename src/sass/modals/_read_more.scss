@@ -35,23 +35,23 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-    
+
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/read-bg/read-bg-2x.png);
     }
     @media screen and (min-width: 480px) {
-        background-image: url(../images/read-bg/read-bg-1x-tablet.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100%;
-        @media screen and (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
-          background-image: url(../images/read-bg/read-bg-2x-tablet.png);
-        }
+      background-image: url(../images/read-bg/read-bg-1x-tablet.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/read-bg/read-bg-2x-tablet.png);
       }
+    }
   }
   &-close {
     position: absolute;
