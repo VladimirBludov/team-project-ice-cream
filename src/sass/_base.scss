@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  margin-right: calc(-1 * (100vw - 100%));
 }
 body {
   background-color: getColor('bg-primary');
@@ -9,7 +10,12 @@ body {
     overflow-x: hidden;
   }
 }
+
 body.modal-open,
 body.menu-open {
+ overflow: hidden;
+}
+
+.disable-scroll {
   overflow: hidden;
 }
