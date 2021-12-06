@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
     'keyup',
     function (e) {
       var key = e.key;
-      console.log(key);
       if (key == 'Escape') {
         modalElem = document.querySelector('.modal__container.active');
         toggleModal(modalElem);
@@ -74,12 +73,12 @@ document.addEventListener('DOMContentLoaded', function () {
     function addModal(modalElem) {
       modalElem.classList.add('active');
       overlay.classList.add('active');
-      document.body.classList.add('modal-open');
+      document.body.classList.add('disable-scroll');
     }
     function removeModal(modalElem) {
       modalElem.classList.remove('active');
       overlay.classList.remove('active');
-      document.body.classList.remove('modal-open');
+      document.body.classList.remove('disable-scroll');
     }
   }
 }); // end ready

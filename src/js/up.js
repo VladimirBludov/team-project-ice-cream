@@ -1,4 +1,4 @@
-const btn=document.querySelector('.scroll__up')
+const btn = document.querySelector('.scroll__up');
 
 window.addEventListener('scroll', showButtonUp);
 btn.addEventListener('click', onButtonUpClick);
@@ -13,5 +13,4 @@ function showButtonUp() {
 
 function onButtonUpClick() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
-  console.log('')
 }
