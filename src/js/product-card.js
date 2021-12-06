@@ -21,7 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }); // end foreach
   }
-  function fillModal(card) {
-    console.log(card);
-  }
+  function fillModal(card) {}
 }); // end ready
