@@ -12,7 +12,9 @@ const e=document.querySelector(".scroll__up");function t(){pageYOffset<document.
 document.addEventListener("DOMContentLoaded",function(){function t(t){t.preventDefault(),document.querySelectorAll(".product-card").forEach(function(e){e.contains(t.target)})}document.querySelectorAll(".product-card__button").forEach(function(e){e.addEventListener("click",t)})});
 },{}],"sByI":[function(require,module,exports) {
 (()=>{const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),o=document.querySelector(".js-close-menu"),n=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",n),o.addEventListener("click",n),e.addEventListener("click",e=>{"A"==e.target.tagName&&n()}),window.matchMedia("(min-width: 768px)").addEventListener("change",o=>{o.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})();
+},{}],"oSGf":[function(require,module,exports) {
+(()=>{const e=document.querySelectorAll('a[href^="#"]');for(let t of e)t.addEventListener("click",function(e){e.preventDefault();const o=t.hasAttribute("href")?t.getAttribute("href"):"body";document.querySelector(o).scrollIntoView({behavior:"smooth",block:"start"})})})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/modal"),require("./js/up"),require("./js/gallery-modal.js"),require("./js/multi-modal.js"),require("./js/product-card.js"),require("./js/mobile-menu");
-},{"./sass/main.scss":"clu1","./js/modal":"RSqK","./js/up":"kzJA","./js/gallery-modal.js":"McB9","./js/multi-modal.js":"C4UP","./js/product-card.js":"fKdv","./js/mobile-menu":"sByI"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-ice-cream/src.24441b13.js.map
+"use strict";require("./sass/main.scss"),require("./js/modal.js"),require("./js/up.js"),require("./js/gallery-modal.js"),require("./js/multi-modal.js"),require("./js/product-card.js"),require("./js/mobile-menu.js"),require("./js/scroll-to-anchor.js");
+},{"./sass/main.scss":"clu1","./js/modal.js":"RSqK","./js/up.js":"kzJA","./js/gallery-modal.js":"McB9","./js/multi-modal.js":"C4UP","./js/product-card.js":"fKdv","./js/mobile-menu.js":"sByI","./js/scroll-to-anchor.js":"oSGf"}]},{},["Focm"], null)
+//# sourceMappingURL=/team-project-ice-cream/src.17fec806.js.map
