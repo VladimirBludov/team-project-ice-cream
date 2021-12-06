@@ -111,13 +111,3 @@
     @content;
   }
 }
-
-@mixin _media_img($section, $img) {
-  background-image: url('../images/' + $section + '/' + $img);
-  @include _pixel_x2 {
-    background-image: url('../images/' + $section + '/' + $img);
-  }
-  @include _pixel_x3 {
-    background-image: url('../images/' + $section + '/' + $img);
-  }
-}

@@ -11,6 +11,11 @@ body {
   }
 }
 
+body.modal-open,
+body.menu-open {
+ overflow: hidden;
+}
+
 .disable-scroll {
   overflow: hidden;
 }

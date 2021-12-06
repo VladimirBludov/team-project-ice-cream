@@ -4,8 +4,12 @@
       <h1 class="hero__title">
         Ice cream made with <span class="hero__title-accent">passion</span>
       </h1>
-      <a href="#products" class="hero__anchor hero__anchor--products">Products</a>
-      <a href="#about" class="hero__anchor hero__anchor--about">How it’s made?</a>
+      <a aria-label="Link to Products" href="#products" class="hero__anchor hero__anchor--products"
+        >Products</a
+      >
+      <a aria-label="Link to How it’s made?" href="#about" class="hero__anchor hero__anchor--about"
+        >How it’s made?</a
+      >
     </div>
 
     <div class="hero__jug_milk_block">
@@ -46,14 +50,16 @@
           "
           type="image/png"
         />
-        <img class="hero__jug_milk_img" src="#" alt="Кувшин с молоком" />
+        <img class="hero__jug_milk_img" src="#" loading="lazy" alt="Jug of milk" />
       </picture>
       <div class="hero__jug_milk_text_container">
         <p class="hero__jug_milk_text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et
         </p>
-        <div class="hero__arrow_container"></div>
+        <button type="button" aria-label="Milk description link" class="hero__arrow_container">
+          <svg class="hero__arrow"><use href="./images/icons.svg#arrow-right"></use></svg>
+        </button>
       </div>
     </div>
 
@@ -111,7 +117,7 @@
           "
           type="image/png"
         />
-        <img class="hero__ice_cream_img" src="#" alt="Мороженое-рожек" />
+        <img class="hero__ice_cream_img" src="#" loading="lazy" alt="Ice cream cone" />
       </picture>
     </div>
 
@@ -163,7 +169,9 @@
         "
         type="image/png"
       />
-      <img class="hero__tasty_girl_img" src="#" alt="Девушка с мороженым" />
+      <img class="hero__tasty_girl_img" src="#" loading="lazy" alt="Girl with ice cream" />
     </picture>
   </div>
+  <!-- Подложка под модальным окном -->
+  <div class="modal__backdrop" data-modal></div>
 </section>
