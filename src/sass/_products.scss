@@ -125,6 +125,16 @@
     @include _pixel_x3 {
       background-image: url('../images/products/products-1@3x.png');
     }
+    @include _desktop {
+      background-image: url('../images/products/products-1-d.png');
+      @include _pixel_x2 {
+        background-image: url('../images/products/products-1-d@2x.png');
+      }
+
+      @include _pixel_x3 {
+        background-image: url('../images/products/products-1-d@3x.png');
+      }
+    }
   }
 }
 .product-card:nth-child(2) {
@@ -139,6 +149,16 @@
     @include _pixel_x3 {
       background-image: url('../images/products/products-2@3x.png');
     }
+    @include _desktop {
+      background-image: url('../images/products/products-2-d.png');
+      @include _pixel_x2 {
+        background-image: url('../images/products/products-2-d@2x.png');
+      }
+
+      @include _pixel_x3 {
+        background-image: url('../images/products/products-2-d@3x.png');
+      }
+    }
   }
 }
 .product-card:last-child {
@@ -152,6 +172,16 @@
 
     @include _pixel_x3 {
       background-image: url('../images/products/products-3@3x.png');
+    }
+    @include _desktop {
+      background-image: url('../images/products/products-3-d.png');
+      @include _pixel_x2 {
+        background-image: url('../images/products/products-3-d@2x.png');
+      }
+
+      @include _pixel_x3 {
+        background-image: url('../images/products/products-3-d@3x.png');
+      }
     }
   }
 }
