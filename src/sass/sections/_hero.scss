@@ -123,6 +123,7 @@
     left: -38px;
     bottom: 45px;
   }
+  animation: appearBottomLeft 2000ms $animation-cubic;
 }
 
 .hero__jug_milk_text_container {
@@ -228,7 +229,7 @@
     top: 56px;
     left: 119px;
   }
-  animation: appearImg 2000ms $animation-cubic;
+  animation: appearBottomRight 2000ms $animation-cubic;
 }
 
 /* mark_list */
@@ -331,4 +332,5 @@
   @include _desktop {
     right: -6px;
   }
+  animation: resize 2000ms $animation-cubic;
 }

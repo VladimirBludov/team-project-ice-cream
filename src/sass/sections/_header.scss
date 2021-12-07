@@ -23,6 +23,7 @@
     transform: translateY(-50%);
     left: -35px;
   }
+  animation: appearTop 2000ms $animation-cubic;
 }
 
 .burger-btn {
@@ -178,6 +179,7 @@
     padding: 0;
     justify-content: flex-end;
   }
+  animation: appearLeft 2000ms $animation-cubic;
 }
 .header__nav {
   display: flex;
