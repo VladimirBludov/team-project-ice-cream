@@ -7,32 +7,35 @@
   position: relative;
 
   @include _phone {
-    padding-top: 137px;
-    padding-bottom: 203px;
+    height: 502px;
     overflow: hidden;
   }
   @include _tablet {
-    padding-top: 102px;
-    padding-bottom: 28px;
+    height: 399px;
   }
   @include _desktop {
-    padding-top: 171px;
-    padding-bottom: 45px;
+    height: 665px;
   }
 }
 
 /* Title */
 
 .hero__title-block {
-  position: relative;
+  position: absolute;
   z-index: 10;
   @include _phone {
+    top: 193px;
+    left: 15px;
     max-width: 218px;
   }
   @include _tablet {
+    top: 102px;
+    left: 20px;
     max-width: 162px;
   }
   @include _desktop {
+    left: 0;
+    top: 171px;
     max-width: 277px;
   }
 }
@@ -108,16 +111,17 @@
 /* jug_milk */
 
 .hero__jug_milk_block {
-  position: relative;
+  position: absolute;
   @include _phone {
     display: none;
   }
   @include _tablet {
-    margin-top: 19px;
+    left: 20px;
+    bottom: 28px;
   }
   @include _desktop {
-    margin-top: 56px;
-    margin-left: -53px;
+    left: -38px;
+    bottom: 45px;
   }
 }
 
@@ -231,12 +235,12 @@
 
 .hero__mark_list {
   position: absolute;
-  right: 0;
   @include _phone {
     display: none;
   }
   @include _tablet {
     top: 94px;
+    right: 15px;
   }
   @include _tablet_and_desktop {
     display: flex;
@@ -244,6 +248,7 @@
   }
   @include _desktop {
     top: 156px;
+    right: -18px;
   }
 }
 .hero__mark_item {
@@ -321,9 +326,9 @@
     position: absolute;
   }
   @include _tablet {
-    right: 0;
+    right: 15px;
   }
   @include _desktop {
-    right: 9px;
+    right: -6px;
   }
 }

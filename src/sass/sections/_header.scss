@@ -1,10 +1,9 @@
 .header {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   z-index: 100;
-
-  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100vw;
 
   @include _phone {
     padding-top: 6px;
@@ -18,6 +17,12 @@
 
 .header__logo {
   width: 199px;
+  @include _desktop {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -35px;
+  }
 }
 
 .burger-btn {
@@ -160,6 +165,7 @@
 
 .header__container {
   display: flex;
+  position: relative;
   @media screen and (min-width: 199px) and (max-width: 479px) {
     width: 100vw;
   }
@@ -167,6 +173,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  @include _desktop {
+    padding: 0;
+    justify-content: flex-end;
   }
 }
 .header__nav {
@@ -181,7 +191,7 @@
   }
   @include _desktop {
     display: flex;
-    margin-left: 75px;
+    margin-left: 110px;
     max-width: 541px;
   }
 }
@@ -203,5 +213,8 @@
 .tablet-menu {
   @include _tablet {
     display: flex;
+  }
+  @include _desktop {
+    margin-left: 110px;
   }
 }
