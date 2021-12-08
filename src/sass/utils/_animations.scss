@@ -19,11 +19,21 @@
     transform: translate();
   }
 }
-
 @keyframes appearTop {
   0% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
+  }
+  100% {
+    opacity: 10;
+    transform: translateY();
+  }
+}
+
+@keyframes appearLitleTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
   }
   100% {
     opacity: 10;

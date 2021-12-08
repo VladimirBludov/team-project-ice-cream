@@ -23,6 +23,9 @@
     transform: translateY(-50%);
     left: -35px;
   }
+  @include _phone {
+    animation: appearLitleTop 2000ms $animation-cubic;
+  }
   animation: appearTop 2000ms $animation-cubic;
 }
 
