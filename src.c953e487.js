@@ -17,4 +17,4 @@ document.addEventListener("DOMContentLoaded",function(){function t(t){t.preventD
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/modal.js"),require("./js/up.js"),require("./js/gallery-modal.js"),require("./js/multi-modal.js"),require("./js/product-card.js"),require("./js/mobile-menu.js"),require("./js/scroll-to-anchor.js");
 },{"./sass/main.scss":"clu1","./js/modal.js":"RSqK","./js/up.js":"kzJA","./js/gallery-modal.js":"McB9","./js/multi-modal.js":"C4UP","./js/product-card.js":"fKdv","./js/mobile-menu.js":"sByI","./js/scroll-to-anchor.js":"oSGf"}]},{},["Focm"], null)
-//# sourceMappingURL=/team-project-ice-cream/src.4fb2ab3f.js.map
+//# sourceMappingURL=/team-project-ice-cream/src.c953e487.js.map
