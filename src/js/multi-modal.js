@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
     function addModal(modalElem) {
       modalElem.classList.add('active');
       overlay.classList.add('active');
-      document.body.classList.add('disable-scroll');
+      document.querySelector('html').classList.add('disable-scroll');
     }
     function removeModal(modalElem) {
       modalElem.classList.remove('active');
       overlay.classList.remove('active');
-      document.body.classList.remove('disable-scroll');
+      document.querySelector('html').classList.remove('disable-scroll');
     }
     function removePrevModal(e) {
       var modalContainers = document.querySelectorAll('[data-modal-container]');

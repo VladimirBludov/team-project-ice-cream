@@ -3,7 +3,7 @@
     openModalBtn: document.querySelector('.gallery__list'),
     closeModalBtn: document.querySelector('.gallery-modal__close'),
     modal: document.querySelector('.gallery-modal'),
-    body: document.querySelector('.body'),
+    body: document.querySelector('html'),
   };
 
   const toggleModalOpen = event => {
