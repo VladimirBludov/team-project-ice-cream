@@ -62,6 +62,7 @@
 .modal-form__head {
   text-align: center;
   color: getColor('text-primary');
+
   @include _phone_and_tablet {
     @include font(20px, 30px, 700);
   }
