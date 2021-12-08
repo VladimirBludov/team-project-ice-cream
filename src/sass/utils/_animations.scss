@@ -12,7 +12,7 @@
 @keyframes appearBottomLeft {
   0% {
     opacity: 0;
-    transform: translate(-100%, 50%);
+    transform: translate(-200%, 50%);
   }
   100% {
     opacity: 10;
@@ -23,11 +23,22 @@
 @keyframes appearTop {
   0% {
     opacity: 0;
-    transform: translate(-300%, -200%);
+    transform: translateY(-200%);
   }
   100% {
     opacity: 10;
-    transform: translate();
+    transform: translateY();
+  }
+}
+
+@keyframes appearLitleTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 10;
+    transform: translateY();
   }
 }
 
@@ -35,6 +46,17 @@
   0% {
     opacity: 0;
     transform: translate(100%, 100%);
+  }
+  100% {
+    opacity: 10;
+    transform: translate();
+  }
+}
+
+@keyframes appearRight {
+  0% {
+    opacity: 0;
+    transform: translate(-100%, -100%);
   }
   100% {
     opacity: 10;
