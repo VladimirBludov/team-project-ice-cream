@@ -30,7 +30,18 @@
   }
 }
 
-@keyframes appearLitleTop {
+@keyframes appearTabletTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 10;
+    transform: translateY();
+  }
+}
+
+@keyframes appearPhoneTop {
   0% {
     opacity: 0;
     transform: translateY(-50%);

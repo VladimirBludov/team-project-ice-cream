@@ -17,16 +17,19 @@
 
 .header__logo {
   width: 199px;
+  @include _phone {
+    animation: appearPhoneTop 2000ms $animation-cubic;
+  }
+  @include _tablet {
+    animation: appearTabletTop 2000ms $animation-cubic;
+  }
   @include _desktop {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: -35px;
+    animation: appearTop 2000ms $animation-cubic;
   }
-  @include _phone {
-    animation: appearLitleTop 2000ms $animation-cubic;
-  }
-  animation: appearTop 2000ms $animation-cubic;
 }
 
 .burger-btn {
