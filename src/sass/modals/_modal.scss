@@ -39,7 +39,10 @@
   /*  Задаём тень и закругление краёв  */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  transition: 300ms opacity $animation-cubic, 300ms visibility $animation-cubic;
+}
+
+.modal__transition {
+  transition: 250ms opacity $animation-cubic, 250ms visibility $animation-cubic;
 }
 
 /* Стили для активных классов подложки и окна */
