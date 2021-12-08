@@ -1,4 +1,4 @@
-@keyframes appearImg {
+@keyframes appearBottomRight {
   0% {
     opacity: 0;
     transform: translate(100%, 50%);
@@ -9,9 +9,56 @@
   }
 }
 
+@keyframes appearBottomLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-200%, 50%);
+  }
+  100% {
+    opacity: 10;
+    transform: translate();
+  }
+}
+
+@keyframes appearTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 10;
+    transform: translateY();
+  }
+}
+
+@keyframes appearLeft {
+  0% {
+    opacity: 0;
+    transform: translate(100%, 100%);
+  }
+  100% {
+    opacity: 10;
+    transform: translate();
+  }
+}
+
+@keyframes appearRight {
+  0% {
+    opacity: 0;
+    transform: translate(-100%, -100%);
+  }
+  100% {
+    opacity: 10;
+    transform: translate();
+  }
+}
+
 @keyframes resize {
   0% {
     transform: scale(0.1);
+  }
+  50% {
+    transform: scale(2);
   }
   100% {
     transform: scale(1);
